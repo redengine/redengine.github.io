@@ -73,68 +73,88 @@
     
     <script type="text/javascript">
       $(function() {
-        $('#home-slider').carousel({
-          interval: 3500,
-          pause: ''
-        });
+        try {
+          $('#home-slider').carousel({
+            interval: 3500,
+            pause: ''
+          });
+        } catch() {}
         
-        $('#redengine1').mobileGmap({
-          markers: [{
-            position: 'center',
-            info: '<h2>Red Engine (UK) Ltd</h2>2 Wedgwood Mews<br/>12/13 Greek Street<br/>London W1D 4BB',
-            showInfo: true
-          },
-          {
-            position: '2 Wedgwood Mews London W1D 4BB'
-          }]
-        });
+        try {
+          $('#redengine1').mobileGmap({
+            markers: [{
+              position: 'center',
+              info: '<h2>Red Engine (UK) Ltd</h2>2 Wedgwood Mews<br/>12/13 Greek Street<br/>London W1D 4BB',
+              showInfo: true
+            },
+            {
+              position: '2 Wedgwood Mews London W1D 4BB'
+            }]
+          });
+        } catch() {}
 
-        $('#redengine2').mobileGmap({
-          markers: [{
-            position: 'center',
-            info: '<h2>Red Engine (UK) Ltd</h2>157 Wardour Street<br/>London W1F 8WQ',
-            showInfo: true
-          },
-          {
-            position: '157 Wardour Street London W1F 8WQ'
-          }]
-        });
+        try {
+          $('#redengine2').mobileGmap({
+            markers: [{
+              position: 'center',
+              info: '<h2>Red Engine (UK) Ltd</h2>157 Wardour Street<br/>London W1F 8WQ',
+              showInfo: true
+            },
+            {
+              position: '157 Wardour Street London W1F 8WQ'
+            }]
+          });
+        } catch() {}
 
-        $("#the-concept-image").hover(
-          function() {
-            $(this).attr("src", "/public/images/wallace-and-gromit.png");
-          }, function() {
-            $(this).attr("src", "/public/images/what-we-do/the-concept.jpeg");
-          }
-        );
-        $("#film-image").hover(
-          function() {
-            $(this).attr("src", "/public/images/wallace-and-gromit.png");
-          }, function() {
-            $(this).attr("src", "/public/images/what-we-do/film.jpeg");
-          }
-        );
-        $("#print-image").hover(
-          function() {
-            $(this).attr("src", "/public/images/wallace-and-gromit.png");
-          }, function() {
-            $(this).attr("src", "/public/images/what-we-do/print.jpeg");
-          }
-        );
-        $("#strategy-image").hover(
-          function() {
-            $(this).attr("src", "/public/images/wallace-and-gromit.png");
-          }, function() {
-            $(this).attr("src", "/public/images/what-we-do/strategy.jpeg");
-          }
-        );
-        $("#creative-image").hover(
-          function() {
-            $(this).attr("src", "/public/images/wallace-and-gromit.png");
-          }, function() {
-            $(this).attr("src", "/public/images/what-we-do/creative.jpeg");
-          }
-        );
+        try {
+          $("#the-concept-image").hover(
+            function() {
+              $(this).attr("src", "/public/images/wallace-and-gromit.png");
+            }, function() {
+              $(this).attr("src", "/public/images/what-we-do/the-concept.jpeg");
+            }
+          );
+        } catch() {}
+        
+        try {
+          $("#film-image").hover(
+            function() {
+              $(this).attr("src", "/public/images/wallace-and-gromit.png");
+            }, function() {
+              $(this).attr("src", "/public/images/what-we-do/film.jpeg");
+            }
+          );
+        } catch() {}
+
+        try {
+          $("#print-image").hover(
+            function() {
+              $(this).attr("src", "/public/images/wallace-and-gromit.png");
+            }, function() {
+              $(this).attr("src", "/public/images/what-we-do/print.jpeg");
+            }
+          );
+        } catch() {}
+
+        try {
+          $("#strategy-image").hover(
+            function() {
+              $(this).attr("src", "/public/images/wallace-and-gromit.png");
+            }, function() {
+              $(this).attr("src", "/public/images/what-we-do/strategy.jpeg");
+            }
+          );
+        } catch() {}
+
+        try {
+          $("#creative-image").hover(
+            function() {
+              $(this).attr("src", "/public/images/wallace-and-gromit.png");
+            }, function() {
+              $(this).attr("src", "/public/images/what-we-do/creative.jpeg");
+            }
+          );
+        } catch() {}
       })
     </script>
   </body>
