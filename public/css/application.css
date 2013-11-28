@@ -19,6 +19,17 @@ body {
   background-color: #fff;
 }
 
+.gmap {
+  width: 97%;
+  height: 97%;
+  min-height: 500px;
+  padding: 2%;
+}
+
+.gmap_image img {
+  max-width: 97%;
+}
+
 h1 {
   color: rgb(171,174,180);
   text-align: center;

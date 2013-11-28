@@ -67,6 +67,8 @@
     </div>
     
     <script src="/public/js/jquery.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;language=en"></script>
+    <script src="/public/js/jquery.mobilegmap.min.js"></script>
     <script src="/public/js/bootstrap.min.js"></script>
     
     <script type="text/javascript">
@@ -76,6 +78,28 @@
           pause: ''
         });
         
+        $('#redengine1').mobileGmap({
+          markers: [{
+            position: 'center',
+            info: '<h2>Red Engine (UK) Ltd</h2>2 Wedgwood Mews<br/>12/13 Greek Street<br/>London W1D 4BB',
+            showInfo: true
+          },
+          {
+            position: '2 Wedgwood Mews London W1D 4BB'
+          }]
+        });
+
+        $('#redengine2').mobileGmap({
+          markers: [{
+            position: 'center',
+            info: '<h2>Red Engine (UK) Ltd</h2>157 Wardour Street<br/>London W1F 8WQ',
+            showInfo: true
+          },
+          {
+            position: '157 Wardour Street London W1F 8WQ'
+          }]
+        });
+
         $("#the-concept-image").hover(
           function() {
             $(this).attr("src", "/public/images/wallace-and-gromit.png");
