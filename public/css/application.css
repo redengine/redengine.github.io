@@ -1,0 +1,278 @@
+@font-face {
+  font-family: 'DejaVuSans';
+  src: url('../fonts/DejaVuSans.ttf');
+}
+
+a:hover {
+  text-decoration: none;
+}
+a:visited,
+a:active,
+a:link {
+  color: rgb(120,121,121);
+}
+
+body {
+  font-family: 'DejaVuSans';
+  font-size: 1.5em;
+  color: rgb(120,121,121);
+  background-color: #fff;
+}
+
+h1 {
+  color: rgb(171,174,180);
+  text-align: center;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+}
+
+.navbar-nav>li>a {
+  padding-bottom: 6px;  
+  font-size: 0.9em;
+}
+
+.nav>li>a:hover {
+  background-color: #fff;
+}
+
+.active-link:hover, .active-link {
+  border-bottom: none;
+}
+
+.top-nav>div>.nav>li>a:hover, .active-link {
+  border-bottom: 2px solid rgb(206,55,62);
+}
+
+.top-nav>div>.nav>li>a:visited,
+.top-nav>div>.nav>li>a:active,
+.top-nav>div>.nav>li>a:link {
+  color: rgb(120,121,121);
+}
+
+footer>nav>ul>li>a:hover, .personal-contact>h4>a:hover, a:hover, address>a:hover {
+  color: rgb(206,55,62);
+}
+footer a:visited,
+footer a:active,
+footer a:link {
+  color: rgb(120,121,121);
+}
+
+.social-icon {
+  color: #79777a;
+  font-size: 1.25em;
+}
+
+.logo {
+  height: 60px;
+  margin: 0px;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border: none;
+}
+
+.top-nav {
+  border-bottom: 4px solid rgb(171,174,180);
+}
+
+.top-nav ul li {
+  margin-left: 0.5em;
+}
+
+.bottom-nav ul li {
+}
+
+footer {
+  margin-top: 40px;
+  border-top: 1px solid rgb(120,121,121);
+}
+
+#home-slider {
+  margin-bottom: -30px;
+}
+
+.carousel-inner {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.carousel {
+}
+
+.carousel-control.right {
+  border-radius: 0px 15px 0px 0px;
+}
+
+.carousel-control.left {
+  border-radius: 15px 0px 0px 0px;
+}
+
+.carousel-control>i {
+  position: absolute;
+  top: 45%;
+  z-index: 5;
+  display: inline-block;
+  font-size: 2em;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+  margin-left: 0px;
+  left: 0%;
+  width: 100%;
+  text-align: right;
+}
+
+.carousel-indicators .active {
+  background-color: rgb(171,174,180);
+}
+
+.carousel-indicators li {
+  border: 1px solid rgb(171,174,180);
+}
+
+.carousel-caption {
+  top: 0;
+  height: 3em;
+  width: 100%;
+  left: 0;
+  font-size: 2em;
+  text-align: left;
+  color: rgb(184,187,190);
+  background: rgba(255,255,255,0.25);
+}
+
+.icon-angle-left {
+  left: 20%;
+} 
+ 
+.icon-angle-right {
+  right: 20%;
+}
+
+.img-rounded {
+  padding: 0px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.img-responsive, .fadish-bg {
+  margin-bottom: 10px;
+}
+
+.personal-contact {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.personal-contact h4, 
+.personal-contact h6 {
+  letter-spacing: 2px;
+  font-size: 0.8em;
+}
+
+.personal-contact-solo h4, 
+.personal-contact-solo h6 {
+  letter-spacing: 2px;
+  font-size: 1.0em;
+}
+
+address {
+  color: rgb(120,121,121);  
+}
+
+.media-heading, h3 {
+  color: rgb(120,121,121);
+  letter-spacing: 2px;
+}
+
+.media {
+  padding-top: 40px;
+}
+
+.fadish:hover {
+  cursor: pointer;
+  zoom: 1;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+
+.back-to-team {
+  width: 100px;
+  margin-top: 20px;
+}
+
+.row {
+  padding-top: 20px;
+}
+
+.image-over-wording-slider {
+  font-size: 2em;
+  letter-spacing: 2px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  bottom: 20px;
+  left: 0px;
+  padding-top: 5px;
+  width: 100%;
+  height: 50px;
+  opacity: 0.66;
+  filter: alpha(opacity=66);
+}
+
+.image-over-wording {
+  font-size: 1.15em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  bottom: 40px;
+  left: 0px;
+  width: 100%;
+  height: 30px;
+  padding: 3px 0px 0px 15px;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  text-transform: uppercase;
+}
+
+.image-under-wording {
+  font-size: 1.15em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+  left: 0px;
+  width: 100%;
+  height: 30px;
+  padding: 3px 0px 0px 15px;
+  text-transform: uppercase;
+}
+
+.purple {
+  background-color: rgb(80,19,65);
+}
+
+.red {
+  background-color: rgb(191,0,29);
+}
+
+.orange {
+  background-color: rgb(217,64,21);
+}
+
+.blue {
+  background-color: rgb(40,84,114);
+}
+
+.green {
+  background-color: rgb(137,143,76);
+}

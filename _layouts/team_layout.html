@@ -1,0 +1,32 @@
+---
+layout: default
+
+title: Who We Are
+---
+
+<div class="row">
+  <div class="col-md-4 col-sm-4">
+    <img class="img-responsive img-rounded" src="../public/images/who-we-are/{{ page.image }}" alt="{{ page.name }}">
+
+    <div class="personal-contact-solo">
+      <h4>{{ page.name }}</h4>
+      <h6>{{ page.job }}</h6>
+
+      <i class="icon-envelope"></i> <a href="mailto:{{ page.email }}" class="mailto">{{ page.email }}</a><br/> 
+      T&nbsp;&nbsp;{{ page.phone }}<br/>
+      M&nbsp;&nbsp;{{ page.mobile }}
+    </div>
+  </div>
+  
+  <div class="col-md-8 col-sm-8">
+    {{ page.content }}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 col-sm-12">
+    <a href="../who-we-are/index.html"><img src="../public/images/back-to-team.png" alt="Back to Team" class="back-to-team"></a>
+  </div>
+</div>
+
+
