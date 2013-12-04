@@ -16,9 +16,3 @@ Images (Portfolio): JPG - 16:9 - 600x333 (cropped if required)
 Images (About): JPG - 4:4 - 300x300 (cropped if required - B&W recoloured)
 
 Images (Logo): PNG - 300px Wide (transparent)
-
-
-TODO
-====
-
-Paul Lewis - needs to be in the third person can you please change.
