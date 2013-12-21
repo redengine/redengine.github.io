@@ -37,6 +37,12 @@ h1 {
   letter-spacing: 4px;
 }
 
+h3 {
+  color: rgb(171,174,180);
+  font-size: 1.5em;
+  letter-spacing: 6px;
+}
+
 .navbar-nav>li>a {
   padding-bottom: 6px;  
   font-size: 0.9em;
