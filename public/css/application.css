@@ -60,6 +60,34 @@ h5 {
   letter-spacing: 4px;
 }
 
+.big-standard {
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  font-weight: 300;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.huge-standard {
+  font-size: 3em;
+  letter-spacing: 6px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.top-and-tailed {
+  border-top: 2px solid #e6e6e6;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.big-red {
+  color: rgb(206,55,62);
+}
+
+.big-black {
+  color: #000;
+}
+
 .navbar-nav>li>a {
   padding-bottom: 6px;  
   font-size: 0.9em;
@@ -244,7 +272,7 @@ address {
   font-size: 2em;
   letter-spacing: 2px;
   background-color: #fff;
-  color: #000;
+  color: #fff; /* was 000 */
   text-align: center;
   display: inline-block;
   position: relative;
@@ -253,8 +281,8 @@ address {
   padding-top: 5px;
   width: 100%;
   height: 50px;
-  opacity: 0.66;
-  filter: alpha(opacity=66);
+  opacity: 0.85; /* was 66 */
+  filter: alpha(opacity=85);
 }
 
 .image-over-wording {
