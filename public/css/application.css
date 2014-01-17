@@ -3,11 +3,6 @@
   src: url('../fonts/DejaVuSans.ttf');
 }
 
-@font-face {
-  font-family: 'ArchivoBlack-Regular';
-  src: url('../fonts/ArchivoBlack-Regular.otf');
-}
-
 a:hover {
   text-decoration: none;
 }
@@ -66,7 +61,6 @@ h5 {
 }
 
 .big-standard {
-  font-family: 'ArchivoBlack-Regular';
   font-size: 1.9em;
   letter-spacing: 4px;
   font-weight: 100;
