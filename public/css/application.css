@@ -23,7 +23,8 @@ body {
   width: 97%;
   height: 97%;
   min-height: 500px;
-  padding: 2%;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .gmap_image img {
