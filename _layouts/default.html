@@ -78,7 +78,14 @@
     <script type="text/javascript">
       $(function() {
         try {
-          $('#home-slider').carousel({
+          $('#home-slider-0').carousel({
+            interval: 3500,
+            pause: ''
+          });
+        } catch(error) {}
+        
+        try {
+          $('#home-slider-1').carousel({
             interval: 3500,
             pause: ''
           });
