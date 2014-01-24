@@ -5,13 +5,21 @@ layout: default
 <div class="row">
   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <h2>{{ page.header }}</h2>
+
+    <!-- try to extract this bit -->
     <div class="videoWrapper">
-      <video controls>
-          <source src="{{ page.mp4-url }}" type="video/mp4">
-          <source src="{{ page.webm-url }}" type="video/webm">
-          <source src="{{ page.ogv-url }}" type="video/ogv">
-          Sorry, your browser does not support the video tag.
+      <video controls poster=".jpg">
+          <source src="{{ page.mp4-url }}" type="video/mp4"/>
+          <source src="{{ page.ogv-url }}" type="video/ogg"/>
+          <source src="{{ page.webm-url }}" type="video/webm"/>
+          <object type="application/x-shockwave-flash" data=".swf">
+            <param name="movie" value=".swf"/>
+            <param name="flashvars" value="controlbar=over&amp;image=.jpg&amp;file=.mp4"/>
+            <img src=".jpg" alt="{{ page.header }}" title="No video playback, please download the video below"/>
+          </object>
       </video>
     </div>
+    <!-- end of extract -->
+
   </div>
 </div>
