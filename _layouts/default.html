@@ -80,6 +80,13 @@
     <script type="text/javascript">
       $(function() {
         try {
+          $('#home-slider-tablet').carousel({
+            interval: 4000,
+            pause: ''
+          });
+        } catch(error) {}
+        
+        try {
           $('#home-slider-0').carousel({
             interval: 3500,
             pause: ''
