@@ -1,11 +1,18 @@
 <style>
-  .news-flash-desktop, .news-flash-tablet {
+  .news-flash {
     background-color: rgb(206,46,23);
     margin: 30px 0px 0px 0px;
     padding: 0px;
+  }
+
+  .news-flash-desktop, .news-flash-tablet {
     height: 130px;
   }
   
+  .news-flash-phone {
+    height: 90px;
+  }
+    
   .news-flash-desktop img {
     height: 130px;
     width: 32%;
@@ -13,12 +20,19 @@
     float: left;
   }
 
-  .news-flash-tablet #home-slider-tablet .carousel-inner {
+  .not-rounded {
     border-radius: 0px;
   }
   
   .news-flash-tablet #home-slider-tablet img {
     height: 130px;
+    width: 100%;
+    display: inline-block;
+    float: left;
+  }
+
+  .news-flash-phone #home-slider-phone img {
+    height: 90px;
     width: 100%;
     display: inline-block;
     float: left;
@@ -33,11 +47,33 @@
     display: inline-block;
   }
 
+  .news-flash-phone h2 {
+    margin: 20px 3px 10px 3px;
+    color: white;
+    font-size: 1.4em;
+    letter-spacing: 3px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
   .news-flash-desktop p, .news-flash-tablet p {
     color: white;
     margin: 10px;
     font-size: 0.9em;
     display: inline-block;
+  }
+
+  .bground {
+    background-color: rgb(206,46,23);
+  }
+  
+  .phone-text-block {
+    background-color: rgba(0,0,0,0.25);
+    margin: 0px;
+    padding: 8px;
+    display: inline-block;
+    color: white;
+    font-size: 0.8em;
   }
 
   .news-flash-desktop .icon-angle-right {
@@ -60,7 +96,7 @@
 
 
 <a href="news/index.html">
-  <div class="news-flash-desktop row visible-lg visible-md">
+  <div class="news-flash news-flash-desktop row visible-lg visible-md">
     <div class="col-lg-4 col-md-4">
       <h2>What's New</h2>
       <p>3 weeks in Jamaica for Thomson Holidays ...</p>
@@ -76,7 +112,7 @@
   </div>
 
 
-  <div class="news-flash-tablet row visible-sm">
+  <div class="news-flash news-flash-tablet row visible-sm">
     <div class="col-sm-6">
       <h2>What's New</h2>
       <p>3 weeks in Jamaica for Thomson Holidays ...</p>
@@ -84,7 +120,7 @@
 
     <div class="col-sm-5">
       <div id="home-slider-tablet" class="carousel slide">
-        <div class="carousel-inner">    
+        <div class="not-rounded carousel-inner">    
           <div class="item active">
             <img src="public/images/news/image-1.jpg" alt="">
           </div>
@@ -103,10 +139,33 @@
     </div>
   </div>
 
+  <div class="bground">
+    <div class="news-flash news-flash-phone row visible-xs">
+      <div class="col-xs-4">
+        <h2>What's New</h2>
+      </div>
 
-  <div class="row visible-xs">
-    <div class="col-xs-12">
-      blah - phone
+      <div class="col-xs-8">
+        <div id="home-slider-phone" class="carousel slide">
+          <div class="not-rounded carousel-inner">    
+            <div class="item active">
+              <img src="public/images/news/image-1-phone.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="public/images/news/image-2-phone.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="public/images/news/image-3-phone.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="phone-text-block row visible-xs">
+      <div class="col-xs-12">
+        <p>3 weeks in Jamaica for Thomson Holidays ...</p>
+      </div>
     </div>
   </div>
 </a>
