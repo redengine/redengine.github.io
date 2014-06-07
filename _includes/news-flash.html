@@ -9,10 +9,6 @@
     height: 130px;
   }
   
-  .news-flash-phone {
-    height: 90px;
-  }
-    
   .news-flash-desktop img {
     height: 130px;
     width: 32%;
@@ -32,7 +28,6 @@
   }
 
   .news-flash-phone #home-slider-phone img {
-    height: 90px;
     width: 100%;
     display: inline-block;
     float: left;
@@ -63,17 +58,13 @@
     display: inline-block;
   }
 
-  .bground {
-    background-color: rgb(206,46,23);
-  }
-  
   .phone-text-block {
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgb(145,39,23);
     margin: 0px;
     padding: 8px;
     display: inline-block;
     color: white;
-    font-size: 0.8em;
+    font-size: 1.2em;
   }
 
   .news-flash-desktop .icon-angle-right {
@@ -88,6 +79,13 @@
     font-size: 40px;
     width: 100%;
     margin: 45px auto;
+    color: white;
+    float: right;
+  }
+
+  .news-flash-phone .icon-angle-right {
+    font-size: 40px;
+    margin: 7.5% auto;
     color: white;
     float: right;
   }
@@ -144,33 +142,35 @@
     </div>
   </div>
 
-  <div class="bground">
-    <div class="news-flash news-flash-phone row visible-xs">
-      <div class="col-xs-4">
-        <h2>{{ page-title }}</h2>
-      </div>
+  <div class="news-flash news-flash-phone row visible-xs">
+    <div class="col-xs-4">
+      <h2>{{ page-title }}</h2>
+    </div>
 
-      <div class="col-xs-8">
-        <div id="home-slider-phone" class="carousel slide">
-          <div class="not-rounded carousel-inner">    
-            <div class="item active">
-              <img src="{{ post.image-1-phone-url }}" alt="">
-            </div>
-            <div class="item">
-              <img src="{{ post.image-2-phone-url }}" alt="">
-            </div>
-            <div class="item">
-              <img src="{{ post.image-3-phone-url }}" alt="">
-            </div>
+    <div class="col-xs-7">
+      <div id="home-slider-phone" class="carousel slide">
+        <div class="not-rounded carousel-inner">    
+          <div class="item active">
+            <img src="{{ post.image-1-phone-url }}" alt="">
+          </div>
+          <div class="item">
+            <img src="{{ post.image-2-phone-url }}" alt="">
+          </div>
+          <div class="item">
+            <img src="{{ post.image-3-phone-url }}" alt="">
           </div>
         </div>
       </div>
     </div>
-  
-    <div class="phone-text-block row visible-xs">
-      <div class="col-xs-12">
-        <p>{{ post.title }}</p>
-      </div>
+
+    <div class="col-sm-1">
+      <i class="icon-angle-right"></i>
+    </div>
+  </div>
+
+  <div class="phone-text-block row visible-xs">
+    <div class="col-xs-12">
+      <p>{{ post.phone-title }}</p>
     </div>
   </div>
 </a>
