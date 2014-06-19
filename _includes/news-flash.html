@@ -109,11 +109,10 @@
     </div>
 
     <div class="col-lg-8 col-md-8">
-      <img src="{{ post.image-1-desktop-url }}" class="img-responsive" alt="">
-      <img src="{{ post.image-2-desktop-url }}" class="img-responsive" alt="">
-      <img src="{{ post.image-3-desktop-url }}" class="img-responsive" alt="">
-
-      <i class="icon-angle-right"></i>
+		{% for image in post.desktop_images %}
+			<img src='{{ image.url }}' class='img-responsive'/>
+		{% endfor %}
+      	<i class="icon-angle-right"></i>
     </div>
   </div>
 
@@ -125,19 +124,19 @@
     </div>
 
     <div class="col-sm-5">
-      <div id="home-slider-tablet" class="carousel slide">
-        <div class="not-rounded carousel-inner">    
-          <div class="item active">
-            <img src="{{ post.image-1-tablet-url }}" alt="">
-          </div>
-          <div class="item">
-            <img src="{{ post.image-2-tablet-url }}" alt="">
-          </div>
-          <div class="item">
-            <img src="{{ post.image-3-tablet-url }}" alt="">
-          </div>
-        </div>
-      </div>
+    	<div id="home-slider-tablet" class="carousel slide">
+        	<div class="not-rounded carousel-inner">
+          		<div class="item active">
+            		<img src="{{ post.tablet_images[0].url }}" alt="">
+          	  	</div>
+          		<div class="item">
+            		<img src="{{ post.tablet_images[1].url }}" alt="">
+          	  	</div>
+          		<div class="item">
+            		<img src="{{ post.tablet_images[2].url }}" alt="">
+          	  	</div>
+        	</div>
+      	</div>
     </div>
     
     <div class="col-sm-1">
@@ -151,19 +150,19 @@
     </div>
 
     <div class="col-xs-7">
-      <div id="home-slider-phone" class="carousel slide">
-        <div class="not-rounded carousel-inner">    
-          <div class="item active">
-            <img src="{{ post.image-1-phone-url }}" alt="">
-          </div>
-          <div class="item">
-            <img src="{{ post.image-2-phone-url }}" alt="">
-          </div>
-          <div class="item">
-            <img src="{{ post.image-3-phone-url }}" alt="">
-          </div>
-        </div>
-      </div>
+      	<div id="home-slider-phone" class="carousel slide">
+        	<div class="not-rounded carousel-inner">
+          		<div class="item active">
+            		<img src="{{ post.phone_images[0].url }}" alt="">
+          	  	</div>
+          		<div class="item">
+            		<img src="{{ post.phone_images[1].url }}" alt="">
+          	  	</div>
+          		<div class="item">
+            		<img src="{{ post.phone_images[2].url }}" alt="">
+          	  	</div>
+        	</div>
+      	</div>
     </div>
 
     <div class="col-sm-1">

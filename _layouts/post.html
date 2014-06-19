@@ -1,38 +1,72 @@
 ---
 layout: default
-controls: controls
 ---
 
 <div class="row visible-lg visible-md">
-  <div class="col-lg-8 col-md-8">
-    <h2>{{ page.title }}</h2>
-    <div class="videoWrapper clearfix">
-      {% include video-player.html %}
-    </div>
-    <br/><br/>{{ content }}
-  </div>
+  	<div class="col-lg-8 col-md-8">
+    	<h2>{{ page.title }}</h2>
+		
+		{% for video in page.videos %}
+			<div class="videoWrapper clearfix">
+				<video controls poster="{{ video.poster-url }}">
+    				<source src="{{ video.mp4-url }}" type="video/mp4"/>
+    				<source src="{{ video.ogv-url }}" type="video/ogg"/>
+    				<source src="{{ video.webm-url }}" type="video/webm"/>
+    				<object type="application/x-shockwave-flash" data="{{ video.swf-url }}">
+      			  		<param name="movie" value="{{ video.swf-url }}"/>
+      					<param name="flashvars" value="controlbar=over&amp;image={{ video.poster-url }}&amp;file={{ video.mp4-url }}"/>
+      			  		<img src="{{ video.poster-url }}" alt="{{ page.title }}" title="No video playback, please download the video below"/>
+    				</object>
+				</video>
+	    	</div>
+	    	<br/><br/>
+		{% endfor %}
+		
+		{% for image in page.images %}
+			<img src='{{ image.url }}' class='img-responsive'/>
+		{% endfor %}
 
-  <div class="col-lg-4 col-md-4">
-    <h4>News Archive</h4>
-    <ul class="posts">
-      {% for post in site.posts %}
-        <li>
-          <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+		{{ content }}
+  	</div>
+
+  	<div class="col-lg-4 col-md-4">
+    	<h4>News Archive</h4>
+    	<ul class="posts">
+      	  	{% for post in site.posts %}
+        		<li>
+          		  	<a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+        	  	</li>
+      		{% endfor %}
+    	</ul>
+  	</div>
 </div>  
 
 
 <div class="row visible-sm visible-xs">
-  <div class="col-sm-12 col-xs-12">
-    <h2>{{ page.title }}</h2>
-    <div class="videoWrapper clearfix">
-      {% include video-player.html %}
-    </div>
-    <br/><br/>{{ content }}
-  </div>
+  	<div class="col-sm-12 col-xs-12">
+    	<h2>{{ page.title }}</h2>
+		{% for video in page.videos %}
+			<div class="videoWrapper clearfix">
+				<video controls poster="{{ video.poster-url }}">
+    				<source src="{{ video.mp4-url }}" type="video/mp4"/>
+    				<source src="{{ video.ogv-url }}" type="video/ogg"/>
+    				<source src="{{ video.webm-url }}" type="video/webm"/>
+    				<object type="application/x-shockwave-flash" data="{{ video.swf-url }}">
+      			  		<param name="movie" value="{{ video.swf-url }}"/>
+      					<param name="flashvars" value="controlbar=over&amp;image={{ video.poster-url }}&amp;file={{ video.mp4-url }}"/>
+      			  		<img src="{{ video.poster-url }}" alt="{{ page.title }}" title="No video playback, please download the video below"/>
+    				</object>
+				</video>
+	    	</div>
+	    	<br/><br/>
+		{% endfor %}
+		
+		{% for image in page.images %}
+			<img src='{{ image.url }}' class='img-responsive'/>
+		{% endfor %}
+
+		{{ content }}
+  	</div>
 </div>
 
 <div class="row visible-sm visible-xs">
