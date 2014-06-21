@@ -44,11 +44,24 @@
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li {% if page.title == "Welcome" %} class="active-link" {% endif %}><a href="/">HOME</a></li>
-            <li {% if page.title == "What We Do" %} class="active-link" {% endif %}><a href="/what-we-do/index.html">WHAT WE DO</a></li>
-            <li {% if page.title == "Who We Are" %} class="active-link" {% endif %}><a href="/who-we-are/index.html">WHO WE ARE</a></li>
-            <li {% if page.title == "Come and Join Us" %} class="active-link" {% endif %}><a href="/join-us.html">COME AND JOIN US</a></li>
-            <li {% if page.title == "Contact" %} class="active-link" {% endif %}><a href="/contact.html">CONTACT</a></li>
+            <li {% if page.type == 'home' %} class="active-link" {% endif %}>
+				<a href="/">HOME</a>
+			</li>
+            <li {% if page.type == 'what' %} class="active-link" {% endif %}>
+				<a href="/what-we-do/index.html">WHAT WE DO</a>
+			</li>
+            <li {% if page.type == 'who' %} class="active-link" {% endif %}>
+				<a href="/who-we-are/index.html">WHO WE ARE</a>
+			</li>
+            <li {% if page.type == 'post' %} class="active-link" {% endif %}>
+				<a href="{{ site.posts.first.url }}">BLOG</a>
+			</li>
+            <li {% if page.type == 'vacancies' %} class="active-link" {% endif %}>
+				<a href="/join-us.html">COME AND JOIN US</a>
+			</li>
+            <li {% if page.type == 'contact' %} class="active-link" {% endif %}>
+				<a href="/contact.html">CONTACT</a>
+			</li>
           </ul>
         </div>
       </nav>    

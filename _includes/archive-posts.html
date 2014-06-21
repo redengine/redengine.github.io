@@ -1,0 +1,11 @@
+<h4>Archive</h4>
+<ul class="nav nav-pills nav-stacked">
+	{% for post in site.posts %}
+		<li {% if post.title == page.title %} class='active' {% endif %}>
+			<a class="post-link" href="{{ post.url }}">
+				{{ post.title }}<br/>
+				<small class="muted">Posted by {{ post.posted_by }} on {{ post.date | date: "%-d %B %Y" }}</small>
+			</a>
+		</li>
+	{% endfor %}
+</ul>

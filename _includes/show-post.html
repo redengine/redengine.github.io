@@ -1,0 +1,24 @@
+<h2>{{ page.title }}</h2>
+<p class='muted'>Posted by {{ page.posted_by }} on {{ page.date | date: "%-d %B %Y" }}</p>
+
+{% for video in page.videos %}
+	<div class="videoWrapper clearfix">
+		<video controls poster="{{ video.poster-url }}">
+			<source src="{{ video.mp4-url }}" type="video/mp4"/>
+			<source src="{{ video.ogv-url }}" type="video/ogg"/>
+			<source src="{{ video.webm-url }}" type="video/webm"/>
+			<object type="application/x-shockwave-flash" data="{{ video.swf-url }}">
+		  		<param name="movie" value="{{ video.swf-url }}"/>
+				<param name="flashvars" value="controlbar=over&amp;image={{ video.poster-url }}&amp;file={{ video.mp4-url }}"/>
+		  		<img src="{{ video.poster-url }}" alt="{{ page.title }}" title="No video playback, please download the video below"/>
+			</object>
+		</video>
+	</div>
+	<br/><br/>
+{% endfor %}
+
+{% for image in page.images %}
+	<img src='{{ image.url }}' class='img-responsive'/>
+{% endfor %}
+
+{{ content }}
