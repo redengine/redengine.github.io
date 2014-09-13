@@ -11,6 +11,9 @@
     
     <link href="/public/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="/public/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">
+    
+    <link href="http://redengine.tv/rss.xml" rel="alternate" type="application/rss+xml" title="Subscribe to our RSS feed" />
+    <link href="http://redengine.tv/atom.xml" rel="alternate" type="application/atom+xml" title="Subscribe to our Atom feed" />
 
     <!--[if lt IE 9]>
       <script src="/public/js/html5shiv.js"></script>
@@ -78,8 +81,12 @@
             <li><a href="https://redengine.chillivault.tv/login" target="_blank">client sign in</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://www.twitter.com/RedEngineUK" target="_blank"><i class="social-icon icon-twitter"></i></a></li>
-            <li><a href="https://www.facebook.com/pages/Red-Engine/1401399986767639" target="_blank"><i class="social-icon icon-facebook-sign"></i></a></li>
+            <li><a href="https://www.twitter.com/RedEngineUK" title="Red Engine on Twitter" target="_blank"><i class="social-icon icon-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/pages/Red-Engine/1401399986767639" title="Red Engine on Facebook" target="_blank"><i class="social-icon icon-facebook-sign"></i></a></li>
+            <!--
+            <li><a href="http://redengine.tv/rss.xml" title="Subscribe to our RSS feed"><i class="social-icon icon-rss"></i></a></li>
+            <li><a href="http://redengine.tv/atom.xml" title="Subscribe to our Atom feed"><i class="social-icon icon-rss"></i></a></li>
+            -->
             <li><a href="mailto:info@redengine.tv">&copy; {{ site.time | date: "%Y" }} Red Engine</a></li>
           </ul>
         </nav>
