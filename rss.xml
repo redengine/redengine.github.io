@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redengine.tv</title>
+    <link>http://redengine.tv/</link>
+    <atom:link href="http://redengine.tv/rss.xml" rel="self" type="application/rss+xml" />
+    <description>http://redengine.tv/</description>
+    <language>en-us</language>
+    <pubDate>{{ site.time | date: "%-d %B %Y" }}</pubDate>
+    <lastBuildDate>{{ site.time | date: "%-d %B %Y" }}</lastBuildDate>
+
+    {% for post in site.posts %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>http://redengine.tv{{ post.url }}</link>
+      <pubDate>{{ post.date | date: "%-d %B %Y" }}</pubDate>
+      <author>{{ post.posted_by }}</author>
+      <guid>http://redengine.tv{{ post.id }}</guid>
+      <description>{{ post.content | xml_escape }}</description>
+    </item>
+    {% endfor %}
+
+  </channel> 
+</rss>
