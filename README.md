@@ -5,10 +5,10 @@ Red Engine Website (redengine.tv)
 Images
 ======
 
-  Large - Slider: JPG - 16:9 - 1280x720 (cropped if required)
-  Medium: JPG - 16:9 - 600x333 (cropped if required)
-  Small - About: JPG - 4:4 - 300x300 (cropped if required - B&W recoloured)
-  Logo: PNG - 300px Wide (transparent)
++ Large - Slider: JPG - 16:9 - 1280x720 (cropped if required)
++ Medium: JPG - 16:9 - 600x333 (cropped if required)
++ Small - About: JPG - 4:4 - 300x300 (cropped if required - B&W recoloured)
++ Logo: PNG - 300px Wide (transparent)
 
 
 Fonts
