@@ -2,4 +2,9 @@ name: Red Engine
 markdown: redcarpet
 safe: true
 lsi: false
-pygments: true
+highlighter: pygments
+title: Red Engine
+description: Where do you go to find a creative team that really understands you? Welcome to... Red Engine
+url: "http://redengine.tv"
+baseurl: ""
+
