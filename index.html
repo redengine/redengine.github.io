@@ -12,7 +12,7 @@ type: home
 ---
 
 <div class="row visible-lg visible-md">
-  <div id="home-slider-0-holder" class="col-lg-8 col-md-8">
+  <div id="home-slider-0-holder" class="swapper-image col-lg-8 col-md-8">
   </div>
 
   <div class="col-lg-4 col-md-4">
@@ -27,7 +27,7 @@ type: home
 </div>
 
 <div class="row visible-sm">
-  <div id="home-slider-1-holder" class="col-sm-12">
+  <div id="home-slider-1-holder" class="swapper-image col-sm-12">
   </div>
 </div>
 
@@ -45,8 +45,14 @@ type: home
 <script type="text/javascript">
   $(function() {
     var offset = getOffset();
-    $("#home-slider-0-holder").append(createSlider(index_images[offset], "home-slider-0"));
-    $("#home-slider-1-holder").append(createSlider(index_images[offset], "home-slider-1"));
+    
+    // $("#home-slider-0-holder").append(createSlider(index_images[offset], "home-slider-0"));
+    // $("#home-slider-1-holder").append(createSlider(index_images[offset], "home-slider-1"));
+
+    $("#home-slider-0-holder").append(createSwapperImages(index_images[offset]));
+    $("#home-slider-1-holder").append(createSwapperImages(index_images[offset]));
+    setInterval('swapImages()', 3500);
+    
     $("#mobile-image").append(createMobileImage(index_images[offset][0]));
   });
 </script>

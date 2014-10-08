@@ -1,7 +1,7 @@
 function getOffset() {
   var date = new Date();
   // var month = date.getMonth();
-  var month = date.getHours();
+  var month = date.getHours();  // FOR TESTING ONLY!!!
   var offset = month % 3;
   return offset;
 }
