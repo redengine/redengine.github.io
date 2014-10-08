@@ -372,3 +372,11 @@ video {
   width: 100%    !important;
   height: auto   !important;
 }
+
+.swapper-image img {
+  display: none;
+}
+
+.swapper-image img.active {
+  display: block;
+}
