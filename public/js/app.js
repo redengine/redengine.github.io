@@ -81,3 +81,7 @@ function swapImages() {
 }
 
 
+function createMobileImage(image) {
+  return "<img src='" + image + "' class='img-responsive img-rounded fadish'>";
+}
+

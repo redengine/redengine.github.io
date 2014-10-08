@@ -32,8 +32,7 @@ type: home
 </div>
 
 <div class="row visible-xs">
-  <div class="col-xs-12">
-    <img src="{{ slider_images.first.image_url }}" class="img-responsive img-rounded fadish" alt="">
+  <div id="mobile-image" class="col-xs-12">
   </div>
 </div>
 
@@ -48,5 +47,6 @@ type: home
     var offset = getOffset();
     $("#home-slider-0-holder").append(createSlider(index_images[offset], "home-slider-0"));
     $("#home-slider-1-holder").append(createSlider(index_images[offset], "home-slider-1"));
+    $("#mobile-image").append(createMobileImage(index_images[offset][0]));
   });
 </script>
