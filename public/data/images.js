@@ -38,21 +38,57 @@ var index_images = [
 var what_we_do_index_images = [ 
   [
     [
-      "/public/images/what-we-do/index/image-set-1/image-0.jpg",
-      "/public/images/what-we-do/index/image-set-2/image-0.jpg",
-      "/public/images/what-we-do/index/image-set-3/image-0.jpg"
+      "/public/images/what-we-do/index/image-set-1/image-sequence-1/image-0.jpg",
+      "/public/images/what-we-do/index/image-set-1/image-sequence-2/image-0.jpg",
+      "/public/images/what-we-do/index/image-set-1/image-sequence-3/image-0.jpg"
     ],[
-      "/public/images/what-we-do/index/image-set-1/image-1.jpg",
-      "/public/images/what-we-do/index/image-set-2/image-1.jpg",
-      "/public/images/what-we-do/index/image-set-3/image-1.jpg"
+      "/public/images/what-we-do/index/image-set-1/image-sequence-1/image-1.jpg",
+      "/public/images/what-we-do/index/image-set-1/image-sequence-2/image-1.jpg",
+      "/public/images/what-we-do/index/image-set-1/image-sequence-3/image-1.jpg"
     ],[
-      "/public/images/what-we-do/index/image-set-1/image-2.jpg",
-      "/public/images/what-we-do/index/image-set-2/image-2.jpg",
-      "/public/images/what-we-do/index/image-set-3/image-2.jpg"
+      "/public/images/what-we-do/index/image-set-1/image-sequence-1/image-2.jpg",
+      "/public/images/what-we-do/index/image-set-1/image-sequence-2/image-2.jpg",
+      "/public/images/what-we-do/index/image-set-1/image-sequence-3/image-2.jpg"
     ],[
-      "/public/images/what-we-do/index/image-set-1/image-3.jpg",
-      "/public/images/what-we-do/index/image-set-2/image-3.jpg",
-      "/public/images/what-we-do/index/image-set-3/image-3.jpg"
+      "/public/images/what-we-do/index/image-set-1/image-sequence-1/image-3.jpg",
+      "/public/images/what-we-do/index/image-set-1/image-sequence-2/image-3.jpg",
+      "/public/images/what-we-do/index/image-set-1/image-sequence-3/image-3.jpg"
+    ]
+  ],[
+    [
+      "/public/images/what-we-do/index/image-set-2/image-sequence-1/image-0.jpg",
+      "/public/images/what-we-do/index/image-set-2/image-sequence-2/image-0.jpg",
+      "/public/images/what-we-do/index/image-set-2/image-sequence-3/image-0.jpg"
+    ],[
+      "/public/images/what-we-do/index/image-set-2/image-sequence-1/image-1.jpg",
+      "/public/images/what-we-do/index/image-set-2/image-sequence-2/image-1.jpg",
+      "/public/images/what-we-do/index/image-set-2/image-sequence-3/image-1.jpg"
+    ],[
+      "/public/images/what-we-do/index/image-set-2/image-sequence-1/image-2.jpg",
+      "/public/images/what-we-do/index/image-set-2/image-sequence-2/image-2.jpg",
+      "/public/images/what-we-do/index/image-set-2/image-sequence-3/image-2.jpg"
+    ],[
+      "/public/images/what-we-do/index/image-set-2/image-sequence-1/image-3.jpg",
+      "/public/images/what-we-do/index/image-set-2/image-sequence-2/image-3.jpg",
+      "/public/images/what-we-do/index/image-set-2/image-sequence-3/image-3.jpg"
+    ]
+  ],[
+    [
+      "/public/images/what-we-do/index/image-set-3/image-sequence-1/image-0.jpg",
+      "/public/images/what-we-do/index/image-set-3/image-sequence-2/image-0.jpg",
+      "/public/images/what-we-do/index/image-set-3/image-sequence-3/image-0.jpg"
+    ],[
+      "/public/images/what-we-do/index/image-set-3/image-sequence-1/image-1.jpg",
+      "/public/images/what-we-do/index/image-set-3/image-sequence-2/image-1.jpg",
+      "/public/images/what-we-do/index/image-set-3/image-sequence-3/image-1.jpg"
+    ],[
+      "/public/images/what-we-do/index/image-set-3/image-sequence-1/image-2.jpg",
+      "/public/images/what-we-do/index/image-set-3/image-sequence-2/image-2.jpg",
+      "/public/images/what-we-do/index/image-set-3/image-sequence-3/image-2.jpg"
+    ],[
+      "/public/images/what-we-do/index/image-set-3/image-sequence-1/image-3.jpg",
+      "/public/images/what-we-do/index/image-set-3/image-sequence-2/image-3.jpg",
+      "/public/images/what-we-do/index/image-set-3/image-sequence-3/image-3.jpg"
     ]
   ]
 ];
