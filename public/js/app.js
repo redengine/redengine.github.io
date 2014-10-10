@@ -76,8 +76,8 @@ function swapImages() {
       next = $(this).parent().children().first();
     }
 
-    $(this).fadeOut(1000, function() {
-      next.fadeIn(1000).addClass('active');
+    $(this).fadeOut(150, "swing", function() {
+      next.fadeIn(150, "swing").addClass('active');
       $(this).removeClass('active');
     });
   });
