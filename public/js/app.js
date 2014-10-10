@@ -1,7 +1,10 @@
+function getInterval() {
+  return 3500;
+}
+
 function getOffset() {
   var date = new Date();
-  // var month = date.getMonth();
-  var month = date.getHours();  // FOR TESTING ONLY!!!
+  var month = date.getMonth();
   var offset = month % 3;
   return offset;
 }

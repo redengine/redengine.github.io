@@ -45,13 +45,14 @@ type: home
 <script type="text/javascript">
   $(function() {
     var offset = getOffset();
+    var interval = getInterval();
     
     // $("#home-slider-0-holder").append(createSlider(index_images[offset], "home-slider-0"));
     // $("#home-slider-1-holder").append(createSlider(index_images[offset], "home-slider-1"));
 
     $("#home-slider-0-holder").append(createSwapperImages(index_images[offset]));
     $("#home-slider-1-holder").append(createSwapperImages(index_images[offset]));
-    setInterval('swapImages()', 3500);
+    setInterval('swapImages()', interval);
     
     $("#mobile-image").append(createMobileImage(index_images[offset][0]));
   });
