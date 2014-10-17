@@ -5,13 +5,13 @@
   <head>
     <title>{{ site.name }} | {{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <meta name="description" content="Red Engine are a London based creative and film company covering any business types, working with many leading industry experts">
     <meta name="keywords" content="media, film, travel, tourism, creative media, film and video media, marketing, travel and tourism creative experts, leading industry experts, advertising">
-    
+
     <link href="/public/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="/public/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">
-    
+
     <link href="http://redengine.tv/rss.xml" rel="alternate" type="application/rss+xml" title="Subscribe to our RSS feed" />
     <link href="http://redengine.tv/atom.xml" rel="alternate" type="application/atom+xml" title="Subscribe to our Atom feed" />
 
@@ -27,11 +27,11 @@
 
     <link href="/public/css/application.css" rel="stylesheet" media="screen">
   </head>
-  
+
   <body>
 
     <div class="container">
-    
+
       <nav class="navbar navbar-default top-nav" role="navigation">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -67,12 +67,12 @@
 			</li>
           </ul>
         </div>
-      </nav>    
-        
+      </nav>
+
       <div class="clearfix">
         {{ content }}
       </div>
-      
+
       <footer clearfix>
         <nav class="navbar bottom-nav" role="navigation">
           <ul class="nav navbar-nav navbar-left">
@@ -92,42 +92,23 @@
         </nav>
       </footer>
     </div>
-    
+
     <script src="/public/js/jquery.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;language=en"></script>
     <script src="/public/js/jquery.mobilegmap.min.js"></script>
     <script src="/public/js/bootstrap.min.js"></script>
-    
+
     <script type="text/javascript">
       $(function() {
+
         try {
-          $('#home-slider-tablet').carousel({
-            interval: 4000,
+          $('.carousel').carousel({
+            interval: 3500,
             pause: ''
           });
         } catch(error) {}
 
-        try {
-          $('#home-slider-phone').carousel({
-            interval: 4000,
-            pause: ''
-          });
-        } catch(error) {}
-        
-        try {
-          $('#home-slider-0').carousel({
-            interval: 3500,
-            pause: ''
-          });
-        } catch(error) {}
-        
-        try {
-          $('#home-slider-1').carousel({
-            interval: 3500,
-            pause: ''
-          });
-        } catch(error) {}
-        
+
         try {
           $('#redengine1').mobileGmap({
             markers: [{

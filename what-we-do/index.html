@@ -4,16 +4,18 @@ layout: default
 title: What We Do
 
 type: what
---- 
+---
 
-<div class="row">
+<!-- Large, Medium & Small -->
+<div class="row visible-lg visible-md visible-sm">
   <div class="col-lg-4 col-md-4 col-sm-4">
-    <a href="film.html">  
+    <a href="film.html">
       <img id="film-image" src="/public/images/what-we-do/film.jpeg" class="img-responsive img-rounded fadish">
     </a>
   </div>
-  <div id="swapper-image-set-1" class="swapper-image col-lg-4 col-md-4 col-sm-4">
-  </div>
+
+  <div id="swapper-image-set-1" class="swapper-image col-lg-4 col-md-4 col-sm-4"></div>
+
   <div class="col-lg-4 col-md-4 col-sm-4">
     <a href="print.html">
       <img id="print-image" src="/public/images/what-we-do/print.jpeg" class="img-responsive img-rounded fadish">
@@ -21,28 +23,95 @@ type: what
   </div>
 </div>
 
-<div class="row">
-  <div id="swapper-image-set-4" class="swapper-image col-lg-4 col-md-4 col-sm-4">
-  </div>
+<div class="row visible-lg visible-md visible-sm">
+  <div id="swapper-image-set-4" class="swapper-image col-lg-4 col-md-4 col-sm-4"></div>
+
   <div class="col-lg-4 col-md-4 col-sm-4">
-    <a href="creative.html">  
+    <a href="creative.html">
       <img id="creative-image" src="/public/images/what-we-do/creative.jpeg" class="img-responsive img-rounded fadish">
     </a>
   </div>
-  <div id="swapper-image-set-2" class="swapper-image col-lg-4 col-md-4 col-sm-4">
-  </div>
+
+  <div id="swapper-image-set-2" class="swapper-image col-lg-4 col-md-4 col-sm-4"></div>
 </div>
 
-<div class="row">
+<div class="row visible-lg visible-md visible-sm">
   <div class="col-lg-4 col-md-4 col-sm-4">
-    <a href="the-concept.html">  
+    <a href="the-concept.html">
       <img id="the-concept-image" src="/public/images/what-we-do/the-concept.jpeg" class="img-responsive img-rounded fadish">
     </a>
   </div>
-  <div id="swapper-image-set-3" class="swapper-image col-lg-4 col-md-4 col-sm-4">
-  </div>
+
+  <div id="swapper-image-set-3" class="swapper-image col-lg-4 col-md-4 col-sm-4"></div>
+
   <div class="col-lg-4 col-md-4 col-sm-4">
-    <a href="social-media.html">  
+    <a href="social-media.html">
+      <img id="strategy-image" src="/public/images/what-we-do/social-media.jpeg" class="img-responsive img-rounded fadish">
+    </a>
+  </div>
+</div>
+
+
+<!-- Extra Small -->
+<div class="row visible-xs">
+  <div class="col-xs-12">
+    <a href="film.html">
+      <img id="film-image" src="/public/images/what-we-do/film.jpeg" class="img-responsive img-rounded fadish">
+    </a>
+  </div>
+</div>
+
+<div class="row visible-xs">
+  <div class="col-xs-12">
+    <div id="swapper-image-set-xs-1" class="swapper-image col-xs-12"></div>
+  </div>
+</div>
+
+<div class="row visible-xs">
+  <div class="col-xs-12">
+    <a href="print.html">
+      <img id="print-image" src="/public/images/what-we-do/print.jpeg" class="img-responsive img-rounded fadish">
+    </a>
+  </div>
+</div>
+
+<div class="row visible-xs">
+  <div class="col-xs-12">
+    <div id="swapper-image-set-xs-4" class="swapper-image col-xs-12"></div>
+  </div>
+</div>
+
+<div class="row visible-xs">
+  <div class="col-xs-12">
+    <a href="creative.html">
+      <img id="creative-image" src="/public/images/what-we-do/creative.jpeg" class="img-responsive img-rounded fadish">
+    </a>
+  </div>
+</div>
+
+<div class="row visible-xs">
+  <div class="col-xs-12">
+    <div id="swapper-image-set-xs-2" class="swapper-image col-xs-12"></div>
+  </div>
+</div>
+
+<div class="row visible-xs">
+  <div class="col-xs-12">
+    <a href="the-concept.html">
+      <img id="the-concept-image" src="/public/images/what-we-do/the-concept.jpeg" class="img-responsive img-rounded fadish">
+    </a>
+  </div>
+</div>
+
+<div class="row visible-xs">
+  <div class="col-xs-12">
+    <div id="swapper-image-set-xs-3" class="swapper-image col-xs-12"></div>
+  </div>
+</div>
+
+<div class="row visible-xs">
+  <div class="col-xs-12">
+    <a href="social-media.html">
       <img id="strategy-image" src="/public/images/what-we-do/social-media.jpeg" class="img-responsive img-rounded fadish">
     </a>
   </div>
@@ -55,13 +124,23 @@ type: what
 <script type="text/javascript">
   $(function() {
     var offset = getOffset();
-    var interval = getInterval();
+    // var interval = getInterval();
+    //
+    // $("#swapper-image-set-1").append(createSwapperImages(what_we_do_index_images[offset][0]));
+    // $("#swapper-image-set-2").append(createSwapperImages(what_we_do_index_images[offset][1]));
+    // $("#swapper-image-set-3").append(createSwapperImages(what_we_do_index_images[offset][2]));
+    // $("#swapper-image-set-4").append(createSwapperImages(what_we_do_index_images[offset][3]));
+    //
+    // setInterval('swapImages()', interval);
 
-    $("#swapper-image-set-1").append(createSwapperImages(what_we_do_index_images[offset][0]));
-    $("#swapper-image-set-2").append(createSwapperImages(what_we_do_index_images[offset][1]));
-    $("#swapper-image-set-3").append(createSwapperImages(what_we_do_index_images[offset][2]));
-    $("#swapper-image-set-4").append(createSwapperImages(what_we_do_index_images[offset][3]));
-    
-    setInterval('swapImages()', interval);
+    $("#swapper-image-set-1").append(createSlider(what_we_do_index_images[offset][0], "wwd-slider-0"));
+    $("#swapper-image-set-2").append(createSlider(what_we_do_index_images[offset][1], "wwd-slider-1"));
+    $("#swapper-image-set-3").append(createSlider(what_we_do_index_images[offset][2], "wwd-slider-2"));
+    $("#swapper-image-set-4").append(createSlider(what_we_do_index_images[offset][3], "wwd-slider-3"));
+
+    $("#swapper-image-set-xs-1").append(createSlider(what_we_do_index_images[offset][0], "wwd-slider-xs-0"));
+    $("#swapper-image-set-xs-2").append(createSlider(what_we_do_index_images[offset][1], "wwd-slider-xs-1"));
+    $("#swapper-image-set-xs-3").append(createSlider(what_we_do_index_images[offset][2], "wwd-slider-xs-2"));
+    $("#swapper-image-set-xs-4").append(createSlider(what_we_do_index_images[offset][3], "wwd-slider-xs-3"));
   });
 </script>
