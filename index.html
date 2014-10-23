@@ -31,13 +31,8 @@ type: home
   </div>
 </div>
 
-<!-- <div class="row visible-xs">
-  <div id="mobile-image" class="col-xs-12">
-  </div>
-</div> -->
-
-<div class="row visible-lg visible-md visible-sm visible-xs">
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="row visible-sm visible-xs">
+  <div class="col-sm-12 col-xs-12">
     <div class='image-over-wording-slider'></div>
   </div>
 </div>
@@ -51,15 +46,13 @@ type: home
 <script type="text/javascript">
   $(function() {
     var offset = getOffset();
-    // var interval = getInterval();
+    var interval = getInterval();
 
-    // $("#home-slider-0-holder").append(createSwapperImages(index_images[offset]));
-    // $("#home-slider-1-holder").append(createSwapperImages(index_images[offset]));
-    // setInterval('swapImages()', interval);
+    $("#home-slider-0-holder").append(createSwapperImages(index_images[offset]));
+    $("#home-slider-1-holder").append(createSwapperImages(index_images[offset]));
+    setInterval('swapImages()', interval);
 
-    $("#home-slider-0-holder").append(createSlider(index_images[offset], "home-slider-0"));
-    $("#home-slider-1-holder").append(createSlider(index_images[offset], "home-slider-1"));
-
-    // $("#mobile-image").append(createMobileImage(index_images[offset][0]));
+    // $("#home-slider-0-holder").append(createSlider(index_images[offset], "home-slider-0"));
+    // $("#home-slider-1-holder").append(createSlider(index_images[offset], "home-slider-1"));
   });
 </script>

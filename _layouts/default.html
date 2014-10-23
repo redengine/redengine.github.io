@@ -47,9 +47,9 @@
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li {% if page.type == 'home' %} class="active-link" {% endif %}>
-				<a href="/">HOME</a>
-			</li>
+            <!-- <li {% if page.type == 'home' %} class="active-link" {% endif %}>
+				      <a href="/">HOME</a>
+			      </li> -->
             <li {% if page.type == 'what' %} class="active-link" {% endif %}>
 				<a href="/what-we-do/index.html">WHAT WE DO</a>
 			</li>
@@ -60,7 +60,7 @@
 				<a href="{{ site.posts.first.url }}">BLOG</a>
 			</li>
             <li {% if page.type == 'vacancies' %} class="active-link" {% endif %}>
-				<a href="/join-us.html">COME AND JOIN US</a>
+				<a href="/join-us.html">JOIN US</a>
 			</li>
             <li {% if page.type == 'contact' %} class="active-link" {% endif %}>
 				<a href="/contact.html">CONTACT</a>
@@ -76,6 +76,7 @@
       <footer clearfix>
         <nav class="navbar bottom-nav" role="navigation">
           <ul class="nav navbar-nav navbar-left">
+            <li><a href="/">home</a></li>
             <li><a href="/contact.html">contact</a></li>
             <li><a href="/sitemap.xml">sitemap</a></li>
             <li><a href="https://redengine.chillivault.tv/login" target="_blank">client sign in</a></li>
@@ -94,6 +95,7 @@
     </div>
 
     <script src="/public/js/jquery.js"></script>
+    <script src="/public/js/jquery-ui.min.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;language=en"></script>
     <script src="/public/js/jquery.mobilegmap.min.js"></script>
     <script src="/public/js/bootstrap.min.js"></script>
@@ -107,7 +109,6 @@
             pause: ''
           });
         } catch(error) {}
-
 
         try {
           $('#redengine1').mobileGmap({

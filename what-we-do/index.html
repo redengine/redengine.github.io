@@ -131,6 +131,11 @@ type: what
     // $("#swapper-image-set-3").append(createSwapperImages(what_we_do_index_images[offset][2]));
     // $("#swapper-image-set-4").append(createSwapperImages(what_we_do_index_images[offset][3]));
     //
+    // $("#swapper-image-set-xs-1").append(createSwapperImages(what_we_do_index_images[offset][0]));
+    // $("#swapper-image-set-xs-2").append(createSwapperImages(what_we_do_index_images[offset][1]));
+    // $("#swapper-image-set-xs-3").append(createSwapperImages(what_we_do_index_images[offset][2]));
+    // $("#swapper-image-set-xs-4").append(createSwapperImages(what_we_do_index_images[offset][3]));
+    //
     // setInterval('swapImages()', interval);
 
     $("#swapper-image-set-1").append(createSlider(what_we_do_index_images[offset][0], "wwd-slider-0"));
@@ -142,5 +147,9 @@ type: what
     $("#swapper-image-set-xs-2").append(createSlider(what_we_do_index_images[offset][1], "wwd-slider-xs-1"));
     $("#swapper-image-set-xs-3").append(createSlider(what_we_do_index_images[offset][2], "wwd-slider-xs-2"));
     $("#swapper-image-set-xs-4").append(createSlider(what_we_do_index_images[offset][3], "wwd-slider-xs-3"));
-  });
+
+  $('#wwd-slider-1').carousel('pause');
+  $('#wwd-slider-2').carousel('pause');
+});
+
 </script>

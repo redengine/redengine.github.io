@@ -1,6 +1,6 @@
-// function getInterval() {
-//   return 3500;
-// }
+function getInterval() {
+  return 4000;
+}
 
 function getOffset() {
   var date = new Date();
@@ -51,38 +51,32 @@ function createSlider(imageSet, id) {
 }
 
 
-// function createSwapperImages(imageSet) {
-//   var swapperImages = "";
-//
-//   for (var i = 0; i < imageSet.length; i++) {
-//     if (i === 0) {
-//       swapperImages += "<img src='" + imageSet[i] + "' class='active img-responsive img-rounded'>";
-//     } else {
-//       swapperImages += "<img src='" + imageSet[i] + "' class='img-responsive img-rounded'>";
-//     }
-//   }
-//
-//   return swapperImages;
-// }
-//
-//
-// function swapImages() {
-//   $(".swapper-image .active").each(function() {
-//     var next = null;
-//     if ($(this).next().length > 0) {
-//       next = $(this).next();
-//     } else {
-//       next = $(this).parent().children().first();
-//     }
-//
-//     $(this).fadeOut(150, "swing", function() {
-//       next.fadeIn(150, "swing").addClass('active');
-//       $(this).removeClass('active');
-//     });
-//   });
-// }
+function createSwapperImages(imageSet) {
+  var swapperImages = "";
 
+  for (var i = 0; i < imageSet.length; i++) {
+    if (i === 0) {
+      swapperImages += "<img src='" + imageSet[i] + "' class='active img-responsive img-rounded'>";
+    } else {
+      swapperImages += "<img src='" + imageSet[i] + "' class='img-responsive img-rounded'>";
+    }
+  }
 
-// function createMobileImage(image) {
-//   return "<img src='" + image + "' class='img-responsive img-rounded fadish'>";
-// }
+  return swapperImages;
+}
+
+function swapImages() {
+  $(".swapper-image .active").each(function() {
+    var next = null;
+    if ($(this).next().length > 0) {
+      next = $(this).next();
+    } else {
+      next = $(this).parent().children().first();
+    }
+
+    $(this).fadeOut(200, "easeInOutCubic", function() {
+      next.fadeIn(200, "easeInOutCubic").addClass('active');
+      $(this).removeClass('active');
+    });
+  });
+}
