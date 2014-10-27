@@ -148,8 +148,18 @@ type: what
     $("#swapper-image-set-xs-3").append(createSlider(what_we_do_index_images[offset][2], "wwd-slider-xs-2"));
     $("#swapper-image-set-xs-4").append(createSlider(what_we_do_index_images[offset][3], "wwd-slider-xs-3"));
 
-  $('#wwd-slider-1').carousel('pause');
-  $('#wwd-slider-2').carousel('pause');
-});
+    setTimeout('pauseSecondSet()', 1500);
+    setTimeout('startSecondSet()', 1500);
+  });
+
+  function pauseSecondSet() {
+    $('#wwd-slider-1').carousel('pause');
+    $('#wwd-slider-2').carousel('pause');
+  }
+
+  function startSecondSet() {
+    $('#wwd-slider-1').carousel('cycle');
+    $('#wwd-slider-2').carousel('cycle');
+  }
 
 </script>
