@@ -124,42 +124,42 @@ type: what
 <script type="text/javascript">
   $(function() {
     var offset = getOffset();
-    // var interval = getInterval();
-    //
-    // $("#swapper-image-set-1").append(createSwapperImages(what_we_do_index_images[offset][0]));
-    // $("#swapper-image-set-2").append(createSwapperImages(what_we_do_index_images[offset][1]));
-    // $("#swapper-image-set-3").append(createSwapperImages(what_we_do_index_images[offset][2]));
-    // $("#swapper-image-set-4").append(createSwapperImages(what_we_do_index_images[offset][3]));
-    //
-    // $("#swapper-image-set-xs-1").append(createSwapperImages(what_we_do_index_images[offset][0]));
-    // $("#swapper-image-set-xs-2").append(createSwapperImages(what_we_do_index_images[offset][1]));
-    // $("#swapper-image-set-xs-3").append(createSwapperImages(what_we_do_index_images[offset][2]));
-    // $("#swapper-image-set-xs-4").append(createSwapperImages(what_we_do_index_images[offset][3]));
-    //
-    // setInterval('swapImages()', interval);
+    var interval = getInterval();
+    
+    $("#swapper-image-set-1").append(createSwapperImages(what_we_do_index_images[offset][0]));
+    $("#swapper-image-set-2").append(createSwapperImages(what_we_do_index_images[offset][1]));
+    $("#swapper-image-set-3").append(createSwapperImages(what_we_do_index_images[offset][2]));
+    $("#swapper-image-set-4").append(createSwapperImages(what_we_do_index_images[offset][3]));
+    
+    $("#swapper-image-set-xs-1").append(createSwapperImages(what_we_do_index_images[offset][0]));
+    $("#swapper-image-set-xs-2").append(createSwapperImages(what_we_do_index_images[offset][1]));
+    $("#swapper-image-set-xs-3").append(createSwapperImages(what_we_do_index_images[offset][2]));
+    $("#swapper-image-set-xs-4").append(createSwapperImages(what_we_do_index_images[offset][3]));
+    
+    setInterval('swapImages()', interval);
 
-    $("#swapper-image-set-1").append(createSlider(what_we_do_index_images[offset][0], "wwd-slider-0"));
-    $("#swapper-image-set-2").append(createSlider(what_we_do_index_images[offset][1], "wwd-slider-1"));
-    $("#swapper-image-set-3").append(createSlider(what_we_do_index_images[offset][2], "wwd-slider-2"));
-    $("#swapper-image-set-4").append(createSlider(what_we_do_index_images[offset][3], "wwd-slider-3"));
+    // $("#swapper-image-set-1").append(createSlider(what_we_do_index_images[offset][0], "wwd-slider-0"));
+    // $("#swapper-image-set-2").append(createSlider(what_we_do_index_images[offset][1], "wwd-slider-1"));
+    // $("#swapper-image-set-3").append(createSlider(what_we_do_index_images[offset][2], "wwd-slider-2"));
+    // $("#swapper-image-set-4").append(createSlider(what_we_do_index_images[offset][3], "wwd-slider-3"));
 
-    $("#swapper-image-set-xs-1").append(createSlider(what_we_do_index_images[offset][0], "wwd-slider-xs-0"));
-    $("#swapper-image-set-xs-2").append(createSlider(what_we_do_index_images[offset][1], "wwd-slider-xs-1"));
-    $("#swapper-image-set-xs-3").append(createSlider(what_we_do_index_images[offset][2], "wwd-slider-xs-2"));
-    $("#swapper-image-set-xs-4").append(createSlider(what_we_do_index_images[offset][3], "wwd-slider-xs-3"));
+    // $("#swapper-image-set-xs-1").append(createSlider(what_we_do_index_images[offset][0], "wwd-slider-xs-0"));
+    // $("#swapper-image-set-xs-2").append(createSlider(what_we_do_index_images[offset][1], "wwd-slider-xs-1"));
+    // $("#swapper-image-set-xs-3").append(createSlider(what_we_do_index_images[offset][2], "wwd-slider-xs-2"));
+    // $("#swapper-image-set-xs-4").append(createSlider(what_we_do_index_images[offset][3], "wwd-slider-xs-3"));
 
-    setTimeout('pauseSecondSet()', 1500);
-    setTimeout('startSecondSet()', 1500);
+    // setTimeout('pauseSecondSet()', 1500);
+    // setTimeout('startSecondSet()', 1500);
   });
 
-  function pauseSecondSet() {
-    $('#wwd-slider-1').carousel('pause');
-    $('#wwd-slider-2').carousel('pause');
-  }
+  // function pauseSecondSet() {
+  //   $('#wwd-slider-1').carousel('pause');
+  //   $('#wwd-slider-2').carousel('pause');
+  // }
 
-  function startSecondSet() {
-    $('#wwd-slider-1').carousel('cycle');
-    $('#wwd-slider-2').carousel('cycle');
-  }
+  // function startSecondSet() {
+  //   $('#wwd-slider-1').carousel('cycle');
+  //   $('#wwd-slider-2').carousel('cycle');
+  // }
 
 </script>
