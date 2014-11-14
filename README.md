@@ -44,7 +44,3 @@ Upload to ChilliVault into the "Web Site" Library
 Create "Enable Public Access" to each - in the "Viewing and Download Links" section right-click "Download URL" against the 'Original' version and 'Copy Link Address' - email these links to me!
 
 Poster Image: JPG - 16:9 - 600x333 (cropped if required)
-  
-  
-[![Hack redengine/redengine.github.io on Nitrous](https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-4b6757c3247e3c50314390ece34cdb11.png)](https://www.nitrous.io/hack_button?source=embed&runtime=rails&repo=redengine%2Fredengine.github.io&file_to_open=https%3A%2F%2Fgithub.com%2Fredengine%2Fredengine.github.io%2Fblob%2Fmaster%2FREADME.md)
-  
