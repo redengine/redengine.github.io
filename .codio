@@ -8,7 +8,8 @@
   },
 
   "preview": {
-    "Box URL": "http://{{domain}}:3000/",
-    "Box URL SSL": "https://{{domain}}:9500/"
+    "Preview Site": "http://{{domain}}:3000/",
+    "Test Site": "http://redengine.github.io",
+    "Live Site": "http://redengine.tv"
   }
 }
