@@ -1,0 +1,15 @@
+{
+  "commands": {
+    "Jekyll Serve": "jekyll serve -w",
+    "Jekyll Build": "jekyll build",
+    "Git Pull": "git pull",
+    "Git Commit": "git commit -am 'auto commit'",
+    "Git Push": "git push -u origin master"
+  },
+
+  "preview": {
+    "Preview Site": "http://{{domain}}:3000/",
+    "Test Site": "http://redengine.github.io",
+    "Live Site": "http://redengine.tv"
+  }
+}
