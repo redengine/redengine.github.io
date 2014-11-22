@@ -51,20 +51,29 @@
 				      <a href="/">HOME</a>
 			      </li> -->
             <li {% if page.type == 'what' %} class="active-link" {% endif %}>
-				<a href="/what-we-do/index.html">WHAT WE DO</a>
-			</li>
+				      <a href="/what-we-do/index.html">WHAT WE DO</a>
+			      </li>
             <li {% if page.type == 'who' %} class="active-link" {% endif %}>
-				<a href="/who-we-are/index.html">WHO WE ARE</a>
-			</li>
+				      <a href="/who-we-are/index.html">WHO WE ARE</a>
+			      </li>
+            <li {% if page.type == 'clients' %} class="active-link" {% endif %}>
+				      <a href="/clients/index.html">CLIENTS</a>
+			      </li>
+            <li {% if page.type == 'cope' %} class="active-link" {% endif %}>
+				      <a href="/cope/index.html">COPE</a>
+			      </li>
+            <li {% if page.type == 'drones' %} class="active-link" {% endif %}>
+				      <a href="/drones/index.html">DRONES</a>
+			      </li>
             <li {% if page.type == 'post' %} class="active-link" {% endif %}>
-				<a href="{{ site.posts.first.url }}">BLOG</a>
-			</li>
+				      <a href="{{ site.posts.first.url }}">BLOG</a>
+			      </li>
             <li {% if page.type == 'vacancies' %} class="active-link" {% endif %}>
-				<a href="/join-us.html">JOIN US</a>
-			</li>
+				      <a href="/join-us.html">JOIN US</a>
+			      </li>
             <li {% if page.type == 'contact' %} class="active-link" {% endif %}>
-				<a href="/contact.html">CONTACT</a>
-			</li>
+				      <a href="/contact.html">CONTACT</a>
+			      </li>
           </ul>
         </div>
       </nav>

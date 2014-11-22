@@ -1,178 +1,70 @@
 <style>
   .news-flash {
-    background-color: rgb(206,46,23);
     margin: 30px 0px 0px 0px;
-    padding: 0px;
+    padding: 5px;
   }
 
-  .news-flash-desktop, .news-flash-tablet {
-    height: 130px;
+  .news-flash a:hover {
+    text-decoration: none;
   }
-  
-  .news-flash-desktop img {
-    height: 130px;
-    width: 32%;
-    display: inline-block;
-    float: left;
-  }
-
-  .not-rounded {
-    border-radius: 0px;
-  }
-  
-  .news-flash-tablet #home-slider-tablet img {
-    height: 130px;
-    width: 100%;
-    display: inline-block;
-    float: left;
-  }
-
-  .news-flash-phone #home-slider-phone img {
-    width: 100%;
-    display: inline-block;
-    float: left;
-  }
-
-  .news-flash-desktop h2, .news-flash-tablet h2 {
-    margin: 30px 10px 10px 10px;
-    color: white;
-    font-size: 1.9em;
-    letter-spacing: 4px;
-    font-weight: bold;
-    display: inline-block;
-  }
-
-  .news-flash-phone h2 {
-    margin: 20px 3px 10px 3px;
-    color: white;
-    font-size: 1.4em;
-    letter-spacing: 3px;
-    font-weight: bold;
-    display: inline-block;
-  }
-
-  .news-flash-desktop p, .news-flash-tablet p {
-    color: white;
-    margin: 10px;
-    font-size: 0.9em;
-    display: inline-block;
-  }
-
-  .phone-text-block {
-    background-color: rgb(145,39,23);
-    margin: 0px;
-    padding: 8px;
-    display: inline-block;
-    color: white;
-    font-size: 1.0em;
-  }
-
-  .news-flash-desktop .icon-angle-right {
-    font-size: 40px;
-    width: 2%;
-    margin: 45px auto;
-    color: white;
-    float: right;
-  }
-
-  .news-flash-tablet .icon-angle-right {
-    font-size: 40px;
-    width: 100%;
-    margin: 45px auto;
-    color: white;
-    float: right;
-  }
-
-  .news-flash-phone .icon-angle-right {
-    font-size: 40px;
-    color: white;
-    float: right;
-    margin: 20px 10px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  .news-flash a:visited,
+  .news-flash a:active,
+  .news-flash a:link {
+    color: #fff;
   }
 </style>
 
-{% assign page-title = "What's New" %}
 {% assign post = site.posts.first %}
 
-<a href="{{ post.url }}">
-  <div class="news-flash news-flash-desktop row visible-lg visible-md">
-    <div class="col-lg-4 col-md-4">
-      <h2>{{ page-title }}</h2><br/>
+<div class="news-flash row visible-lg visible-md red">
+  <div class="col-lg-6 col-md-6 red">
+    <a href="{{ post.url }}">
+      <h2>What's New...</h2>
       <p>
         <marquee behavior="scroll" scrollamount="3" direction="left" width="100%">
-          {{ post.title }} - {{ post.content | strip_html }}
+          {{ post.title }}
         </marquee>
       </p>
-    </div>
-
-    <div class="col-lg-8 col-md-8">
-		{% for image in post.desktop_images %}
-			<img src='{{ image.url }}' class='img-responsive'/>
-		{% endfor %}
-      	<i class="icon-angle-right"></i>
-    </div>
+    </a>
   </div>
 
-
-  <div class="news-flash news-flash-tablet row visible-sm">
-    <div class="col-sm-6">
-      <h2>{{ page-title }}</h2><br/>
-      <p>{{ post.title }}</p>
-    </div>
-
-    <div class="col-sm-5">
-    	<div id="home-slider-tablet" class="carousel slide">
-        	<div class="not-rounded carousel-inner">
-          		<div class="item active">
-            		<img src="{{ post.tablet_images[0].url }}" alt="">
-          	  	</div>
-          		<div class="item">
-            		<img src="{{ post.tablet_images[1].url }}" alt="">
-          	  	</div>
-          		<div class="item">
-            		<img src="{{ post.tablet_images[2].url }}" alt="">
-          	  	</div>
-        	</div>
-      	</div>
-    </div>
-    
-    <div class="col-sm-1">
-      <i class="icon-angle-right"></i>
-    </div>
+  <div class="col-lg-3 col-md-3 green">
+    <a href="/cope/index.html">
+      <h4>COPE</h4>
+    </a>
   </div>
 
-  <div class="news-flash news-flash-phone row visible-xs">
-    <div class="col-xs-4">
-      <h2>{{ page-title }}</h2>
-    </div>
+  <div class="col-lg-3 col-md-3 blue">
+    <a href="/drones/index.html">
+      <h4>DRONES</h4>
+    </a>
+  </div>
+</div>
 
-    <div class="col-xs-7">
-      	<div id="home-slider-phone" class="carousel slide">
-        	<div class="not-rounded carousel-inner">
-          		<div class="item active">
-            		<img src="{{ post.phone_images[0].url }}" alt="">
-          	  	</div>
-          		<div class="item">
-            		<img src="{{ post.phone_images[1].url }}" alt="">
-          	  	</div>
-          		<div class="item">
-            		<img src="{{ post.phone_images[2].url }}" alt="">
-          	  	</div>
-        	</div>
-      	</div>
-    </div>
 
-    <div class="col-sm-1">
-      <i class="icon-angle-right"></i>
-    </div>
+<div class="news-flash row visible-sm visible-xs">
+  <div class="col-sm-12 col-xs-12 red">
+    <a href="{{ post.url }}">
+      <h2>What's New</h2>
+      <p>
+        <marquee behavior="scroll" scrollamount="3" direction="left" width="100%">
+          {{ post.title }}
+        </marquee>
+      </p>
+    </a>
+  </div>
+</div>
+
+<div class="news-flash row visible-sm visible-xs">
+  <div class="col-sm-6 col-xs-6 green">
+    <a href="/cope/index.html">
+      <h4>COPE</h4>
+    </a>
   </div>
 
-  <div class="phone-text-block row visible-xs">
-    <div class="col-xs-12">
-      <p>{{ post.phone-title }}</p>
-    </div>
+  <div class="col-sm-6 col-xs-6 blue">
+    <a href="/drones/index.html">
+      <h4>DRONES</h4>
+    </a>
   </div>
-</a>
+</div>
