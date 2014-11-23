@@ -1,5 +1,6 @@
 {
   "commands": {
+    "Update": "git pull; bundle install",
     "Jekyll Serve": "jekyll serve -w",
     "Jekyll Build": "jekyll build",
     "Git Pull": "git pull",
