@@ -1,0 +1,173 @@
+<form action="http://getsimpleform.com/messages?form_api_token={{ site.simple-form-token }}" method="post" enctype="multipart/form-data" id="contact-form" name="contact-form" role="form" class="well well-lg">
+
+  <input type='hidden' name='redirect_to' value='https://redengine.github.io/thanks.html' />
+
+  <p class="lead text-warning">Got an idea?</p>
+  <p>Get in touch - we'll be glad to discuss your project with you.</p>
+
+  <div id="error-messages" class="alert alert-danger" role="alert"></div>
+
+  <div class="form-group" id="name-form-group" name="name-form-group">
+    <label for="name" class="control-label">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Tell us your name">
+  </div>
+
+  <div class="form-group" id="company-form-group" name="company-form-group">
+    <label for="name" class="control-label">Company</label>
+    <input type="text" class="form-control" id="company" name="company" placeholder="Tell us who you work for">
+  </div>
+
+  <div class="form-group" id="email-form-group" name="email-form-group">
+    <label for="email" class="control-label">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Give us your email address">
+  </div>
+
+  <div class="form-group" id="phone-form-group" name="phone-form-group">
+    <label for="phone" class="control-label">Phone</label>
+    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your contact number">
+  </div>
+
+  <div class="form-group" id="budget-form-group" name="budget-form-group">
+    <label for="budget" class="control-label">Budget</label>
+    <input type="text" class="form-control" id="budget" name="budget" placeholder="Just a rough idea of your budget">
+  </div>
+
+  <div class="form-group" id="date-form-group" name="date-form-group">
+    <label for="date" class="control-label">Approx Date Required</label>
+    <input type="date" class="form-control" id="date" name="date" placeholder="Approximate date you need it by">
+  </div>
+
+  <div class="form-group" id="project-form-group" name="project-form-group">
+    <label for="project" class="control-label">Project Description</label>
+    <textarea class="form-control" id="project" name="project" rows="10" placeholder="Tell us all about it..."></textarea>
+  </div>
+
+  {% if page.type == "what" %}
+
+    <div class="form-group" id="finished-size-form-group" name="finished-size-form-group">
+      <label for="finished-size" class="control-label">Finished Size</label>
+      <input type="text" class="form-control" id="finished-size" name="finished-size" placeholder="For example: 297mm x 210mm">
+    </div>
+
+    <div class="form-group" id="extent-form-group" name="extent-form-group">
+      <label for="extent" class="control-label">Extent</label>
+      <input type="text" class="form-control" id="extent" name="extent" placeholder="For example: 4pp cover, 24pp text">
+    </div>
+
+    <div class="form-group" id="material-form-group" name="material-form-group">
+      <label for="material" class="control-label">Material</label>
+      <input type="text" class="form-control" id="material" name="material" placeholder="For example: Cover: 250gsm silk, Text: 150gsm silk">
+    </div>
+
+    <div class="form-group" id="colours-form-group" name="colours-form-group">
+      <label for="colours" class="control-label">No. of Colours</label>
+      <input type="text" class="form-control" id="colours" name="colours" placeholder="For example:  colour process + seal throughout">
+    </div>
+
+    <div class="form-group" id="origination-form-group" name="origination-form-group">
+      <label for="origination" class="control-label">Origination</label>
+      <select class="form-control" id="origination" name="origination">
+        <option value="">-- Choose --</option>
+        <option value="disk">Disk</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="proofs-form-group" name="proofs-form-group">
+      <label for="proofs" class="control-label">Proofs</label>
+      <select class="form-control" id="proofs" name="proofs">
+        <option value="">-- Choose --</option>
+        <option value="digital">Digital</option>
+        <option value="wet">Wet</option>
+        <option value="both">Both</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="finish-form-group" name="finish-form-group">
+      <label for="finish" class="control-label">Finish</label>
+      <input type="text" class="form-control" id="finish" name="finish" placeholder="For example: Matt laminate outer cover, crease, fold stitch and trim">
+    </div>
+
+    <div class="form-group" id="quantity-form-group" name="quantity-form-group">
+      <label for="quantity" class="control-label">Quantity</label>
+      <input type="text" class="form-control" id="quantity" name="quantity" placeholder="For example: 10,000 copies plus 5,000 run on">
+    </div>
+
+    <div class="form-group" id="delivery-form-group" name="delivery-form-group">
+      <label for="delivery" class="control-label">Delivery</label>
+      <input type="text" class="form-control" id="delivery" name="delivery" placeholder="For example: 10,000 copies plus 5,000 run on">
+    </div>
+  {% endif %}
+
+  <div class="form-group" id="attachment-form-group" name="attachment-form-group">
+    <label for="attachment" class="control-label">Attachment</label>
+    <input type="file" id="attachment" name="attachment">
+    <p class="help-block">If you have any supporting information - upload a file here</p>
+  </div>
+
+  <button type="submit" class="btn btn-success btn-lg btn-block">Put me in touch</button>
+</form>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+  $(function() {
+    clearErrors();
+
+    $('#contact-form').submit(function(event) {
+      if (validateForm()) {
+        clearErrors();
+        return true;
+      } else {
+        showErrors();
+        event.preventDefault();
+        return false;
+      }
+    });
+  });
+
+  function validateForm() {
+    clearErrors();
+    var isValid = true;
+
+    $("#error-messages").append("<p class='lead'>Whoops - something went wrong!</p><hr/>");
+
+    if ($('#name').val() === "") {
+      $('#error-messages').append("Please tell us your name<br/>");
+      $('#name-form-group').addClass('has-error');
+      isValid = false;
+    }
+    if ($('#company').val() === "") {
+      $('#error-messages').append("Please tell us who you work for<br/>");
+      $('#company-form-group').addClass('has-error');
+      isValid = false;
+    }
+    if ($('#email').val() === "") {
+      $('#error-messages').append("Please give your email address<br/>");
+      $('#email-form-group').addClass('has-error');
+      isValid = false;
+    }
+    if ($('#project').val() === "") {
+      $('#error-messages').append("Please tell us about your project<br/>");
+      $('#project-form-group').addClass('has-error');
+      isValid = false;
+    }
+
+    return isValid;
+  }
+
+  function showErrors() {
+    $('#error-messages').show();
+  }
+
+  function clearErrors() {
+    $('#error-messages').hide();
+    $('#error-messages').empty();
+    $('#email-form-group').removeClass('has-error');
+    $('#name-form-group').removeClass('has-error');
+    $('#company-form-group').removeClass('has-error');
+    $('#project-form-group').removeClass('has-error');
+  }
+</script>
+
+
