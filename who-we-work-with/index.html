@@ -45,15 +45,16 @@ clients:
 
 <style>
   .panel { height: 250px; }
+  .panel-heading:hover { cursor: pointer; }
 </style>
 
 <h1>Our Clients Include...</h1>
 
 {% for client in page.clients %}
   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-    <div class="panel panel-default">
-      <div class="panel-heading"data-toggle="popover" title="{{ client.name }}" data-content="{{ client.about }}" data-placement="bottom">
-        <i class="glyphicon glyphicon-info-sign"></i> click for more info
+    <div class="panel panel-info">
+      <div class="panel-heading" data-toggle="popover" title="{{ client.name }}" data-content="{{ client.about }}" data-placement="bottom">
+        <small><i class="glyphicon glyphicon-info-sign"></i> click here for more info</small>
       </div>
       <div class="panel-body">
         <img class="img-responsive" src="{{ client.logo }}">
