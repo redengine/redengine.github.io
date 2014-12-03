@@ -44,22 +44,22 @@ clients:
 ---
 
 <style>
-  img.client-logo { 
-    display: inline-block; 
-    float: left; 
-    margin: 20px; 
-    padding: 20px; 
-    width: 300px !important; 
-  }
-
-  img.client-logo:hover {
-    opacity: 0.9;
-    cursor: pointer;
-  }
+  .panel { height: 250px; }
 </style>
 
+<h1>Our Clients Include...</h1>
+
 {% for client in page.clients %}
-  <img class="img-responsive client-logo" src="{{ client.logo }}" data-toggle="popover" title="{{ client.name }}" data-content="{{ client.about }}" data-placement="bottom">
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+    <div class="panel panel-default">
+      <div class="panel-heading"data-toggle="popover" title="{{ client.name }}" data-content="{{ client.about }}" data-placement="bottom">
+        <i class="glyphicon glyphicon-info-sign"></i> click for more info
+      </div>
+      <div class="panel-body">
+        <img class="img-responsive" src="{{ client.logo }}">
+      </div>
+    </div>
+  </div>
 {% endfor %}
 
 <script src="/public/js/jquery.js"></script>
