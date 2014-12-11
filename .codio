@@ -2,7 +2,7 @@
   "commands": {
     "1. Update My Code": "git pull",
     "2. Start My Local Server": "jekyll serve -w",
-    "4. Commit My Changes": "git add .; git commit -am 'auto commit'",
+    "4. Commit My Changes": "git add .; git commit -am 'auto commit by Red Engine'",
     "5. Publish My Changes": "git push -u origin master"
   },
 
