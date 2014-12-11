@@ -1,10 +1,46 @@
-<video {{ page.controls }} poster="{{ page.poster-url }}">
-    <source src="{{ page.mp4-url }}" type="video/mp4"/>
-    <source src="{{ page.ogv-url }}" type="video/ogg"/>
-    <source src="{{ page.webm-url }}" type="video/webm"/>
-    <object type="application/x-shockwave-flash" data="{{ page.swf-url }}">
-      <param name="movie" value="{{ page.swf-url }}"/>
-      <param name="flashvars" value="controlbar=over&amp;image={{ page.poster-url }}&amp;file={{ page.mp4-url }}"/>
-      <img src="{{ page.poster-url }}" alt="{{ page.header }}" title="No video playback, please download the video below"/>
-    </object>
-</video>
+<style>
+    .responsive-embeded-video {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .responsive-embeded-video iframe,
+    .responsive-embeded-video object,
+    .responsive-embeded-video embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .video-player { padding-bottom: 50px; }
+</style>
+
+{% if page.mp4-url || page.ogv-url || page.webm-url || page.swf-url %}
+    <video controls poster="{{ page.poster-url }}" class="video-player">
+        <source src="{{ page.mp4-url }}" type="video/mp4"/>
+        <source src="{{ page.ogv-url }}" type="video/ogg"/>
+        <source src="{{ page.webm-url }}" type="video/webm"/>
+        <object type="application/x-shockwave-flash" data="{{ page.swf-url }}">
+            <param name="movie" value="{{ page.swf-url }}"/>
+            <param name="flashvars" value="controlbar=over&amp;image={{ page.poster-url }}&amp;file={{ page.mp4-url }}"/>
+            <img src="{{ page.poster-url }}" alt="{{ page.header }}" title="No video playback, please download the video below"/>
+        </object>
+    </video>
+{% endif %}
+
+{% for video in page.videos %}
+    <div class="video-player">
+        {% if video.title %}
+            <h2>{{ video.title }}</h2>
+        {% endif %}
+        <div class='responsive-embeded-video'>
+            <iframe src="//{{ video.url }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+    </div>
+{% endfor %}

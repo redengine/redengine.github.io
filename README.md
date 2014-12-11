@@ -5,9 +5,8 @@ Red Engine Website (redengine.tv)
 Images
 ======
 
-+ Large - Slider: JPG - 16:9 - 1280x720 (cropped if required)
-+ Medium: JPG - 16:9 - 600x333 (cropped if required)
-+ Small - About: JPG - 4:4 - 300x300 (cropped if required - B&W recoloured)
++ Staff member images: JPG - 4:4 - 300x300 (cropped if required - B&W recoloured)
++ All other images: JPG - 16:9 - 600x333 (cropped if required)
 + Logo: PNG - 300px Wide (transparent)
 
 
@@ -19,6 +18,25 @@ Wording on 'what we do' images - DejaVu Sans Bold 54
 
 Videos
 ====== 
+
+YouTube/Vimeo
+-------------
+
+Just add this into the frontmatter - note: title is optional...
+
+```html
+---
+videos:
+  - title: 
+    url: 
+  - title:
+    url:
+---
+```
+
+
+Old Style HTML5
+---------------
 
 I haven't found a fantastic and easy way to convert all HTML5 video types yet - there are many 'silver bullets' but none of them work for everything or output poor quality video.  However, I'm still looking!  
 
