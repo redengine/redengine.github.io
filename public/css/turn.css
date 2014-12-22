@@ -1,0 +1,52 @@
+.flipbook {
+  margin: 40px auto;
+}
+
+.flipbook div img {
+  width: 100%;
+}
+
+.flipbook div .outside {
+  background-color: rgb(150, 112, 89);
+  color: rgb(255, 215, 0);
+  background-image: url(/public/images/what-we-do/photography/leather-texture.jpg);
+  text-align: center;
+  text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+}
+
+.flipbook div .outside > p {
+  font-size: 3em;
+}
+
+.flipbook div .intro-page,
+.flipbook div .inside {
+  background-color: #ddd;
+  background-image: url(/public/images/what-we-do/photography/paper-texture.jpg);
+  color: #333;
+}
+
+.flipbook div .intro-page {
+  font-size: 1.75em;  
+  text-align: center;
+}
+
+.flipbook div .intro-page p {
+  padding-top: 60px;
+}
+
+.flipbook div .inside {
+  font-size: 1.25em;  
+}
+
+.flipbook div .inside > p {
+  padding: 50px;
+}
+
+.flipbook div .inside > ul {
+  margin: 20px 120px;
+}
+
+.flipbook div .hardback-logo {
+  width: 60%;
+  margin: 30px auto;
+}
