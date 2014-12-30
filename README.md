@@ -66,4 +66,4 @@ Poster Image: JPG - 16:9 - 600x333 (cropped if required)
 Training Documents
 ==================
 
-In '''training-docs''' folder!
+In the training-docs folder!
