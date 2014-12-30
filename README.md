@@ -62,3 +62,8 @@ Upload to ChilliVault into the "Web Site" Library
 Create "Enable Public Access" to each - in the "Viewing and Download Links" section right-click "Download URL" against the 'Original' version and 'Copy Link Address' - email these links to me!
 
 Poster Image: JPG - 16:9 - 600x333 (cropped if required)
+
+Training Documents
+==================
+
+In '''training-docs''' folder!
