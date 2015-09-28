@@ -7,7 +7,7 @@
   },
 
   "preview": {
-    "3. Preview My Changes": "http://{{domain}}:3000/",
+    "3. Preview My Changes": "http://127.0.0.1:3000/",
     "6. The Red Engine Website": "http://redengine.tv"
   }
 }
