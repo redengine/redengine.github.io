@@ -1,13 +1,12 @@
 {
   "commands": {
     "1. Update My Code": "git pull",
-    "2. Start My Local Server": "jekyll serve -w",
+    "2. Start My Local Server": "jekyll serve -w --host 0.0.0.0 --port 3000",
     "4. Commit My Changes": "git add .; git commit -am 'auto commit by Red Engine'",
-    "5. Publish My Changes": "git push -u origin master"
+    "5. Publish My Changes": "git push origin master"
   },
-
   "preview": {
-    "3. Preview My Changes": "http://127.0.0.1:3000/",
+    "3. Preview My Changes": "http://{{domain}}:3000",
     "6. The Red Engine Website": "http://redengine.tv"
   }
 }
