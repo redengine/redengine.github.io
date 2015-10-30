@@ -4,7 +4,7 @@
     "2. Start My Local Server": "jekyll serve -w --host 0.0.0.0 --port 3000",
     "4. Commit My Changes": "git add .; git commit -am 'auto commit by Red Engine'",
     "5. Publish My Changes": "git push origin master",
-    "6. Discard My Changes": "git reset --hard HEAD~1"
+    "6. Discard My Changes": "git checkout -- ."
   },
   "preview": {
     "3. Preview My Changes": "http://{{domain}}:3000",
