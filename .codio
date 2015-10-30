@@ -1,11 +1,9 @@
 {
   "commands": {
     "1. Start My Local Server": "jekyll serve -w --host 0.0.0.0 --port 3000",
-    "2a. Refresh My Project": "git pull; exit",
-    "2b. Discard My Changes": "git checkout -- .; exit",
-    "3a. Commit Any Changes": "git add .; git commit -am 'auto commit by Red Engine'; exit",
-    "3b. Discard Any Commits": "git reset --hard origin/master; exit",
-    "4. Publish My Changes": "git push origin master; exit"
+    "2. Refresh My Project": "git pull; exit",
+    "3. Discard My Changes": "git checkout -- .; exit",
+    "4. Publish My Changes": "git add .; git commit -am 'auto commit by Red Engine'; git push origin master; exit"
   },
   "preview": {
     "a. Preview My Changes": "http://{{domain}}:3000",
