@@ -92,3 +92,13 @@ var what_we_do_index_images = [
     ]
   ]
 ];
+
+var print_images = [ 
+  [
+    "/public/images/what-we-do/print-new/print_brochure_comp.jpg",
+    "/public/images/what-we-do/print-new/print_card_brochure.jpg",
+    "/public/images/what-we-do/print-new/print_parkins_fabrics.jpg",
+    "/public/images/what-we-do/print-new/print_select_travel.jpg",
+    "/public/images/what-we-do/print-new/print_wedding_venues.jpg"
+  ]
+];

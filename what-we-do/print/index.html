@@ -7,12 +7,6 @@ type: what
 
 show-plant-list: true
 
-mp4-url: https://redengine.chillivault.tv/pa/5772f562f96e206f4735ae5d8ff2f4e3/original/print_mp4.mp4
-webm-url: https://redengine.chillivault.tv/pa/e7d6c10606d177bd0530573852bbcead/original/print_ogv.ogv
-ogv-url: https://redengine.chillivault.tv/pa/12b15552d9e391973609335b6ba6fcbf/original/print_webm.webm
-swf-url: https://redengine.chillivault.tv/pa/12b15552d9e391973609335b6ba6faff/original/print_swf.swf
-poster-url:
-controls: autoplay loop
 ---
 
 <div class="row visible-lg visible-md visible-sm visible-xs">
@@ -21,45 +15,40 @@ controls: autoplay loop
   </div>
 </div>
 
-<div class="row visible-lg visible-md visible-sm visible-xs">
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-    <a href="print-1.html">
-      <img src="/public/images/what-we-do/print/print-1.jpg" class="img-responsive img-rounded fadish">
-    </a>
+<div class="row visible-lg visible-md">
+  <div id="home-slider-0-holder" class="swapper-image col-lg-8 col-md-8">
   </div>
 
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-    <a href="print-2.html">
-      <img src="/public/images/what-we-do/print/print-2.jpg" class="img-responsive img-rounded fadish">
-    </a>
-  </div>
+    <div class="col-lg-4 col-md-4">
+      <p class='visible-lg visible-md big-standard top-and-tailed'>Exclusive agency deals and print buying expertise</p>
+    </div>
+    
+    <div class="col-lg-4 col-md-4">
+      <p class='visible-lg visible-md big-standard top-and-tailed'>Competitive prices, a quality product and a first class service</p>
+    </div>
+    
+    <div class="col-lg-4 col-md-4">
+      <p class='visible-lg visible-md big-standard'>More print for your pound</p>
+    </div>
+    
 </div>
 
-<div class="row visible-lg visible-md visible-sm visible-xs">
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-    <a href="print-3.html">
-      <img src="/public/images/what-we-do/print/print-3.jpg" class="img-responsive img-rounded fadish">
-    </a>
+<div class="row visible-sm visible-xs">
+  <div id="home-slider-1-holder" class="swapper-image col-sm-12 col-xs-12">
   </div>
 
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-    <a href="print-4.html">
-      <img src="/public/images/what-we-do/print/print-4.jpg" class="img-responsive img-rounded fadish">
-    </a>
-  </div>
-</div>
-
-
-<div class="row visible-lg visible-md visible-sm visible-xs">
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <p>From initial design concept through to delivery, we support all aspects of publishing and print.</p>
-    <p><strong>No project is too large or too small</strong> for our team and our print industry partners.</p>
-    <p>We know print inside out and have a <strong>strong print heritage</strong>. Our projects and expertise cover all forms of print from small bespoke projects to catalogue production, from print on demand to gravure, we can support all of your print requirements, using the most efficient form of production and making your budget go much further. Quality control, care and attention to detail runs through everything we do.</p>
-    <p>As well as having <strong>excellent links to the UK printing industry</strong>, Red Engine are the <strong>sole UK agent for one of Europe's largest web offset and gravure printing manufacturers</strong> and we oversee all aspects of a project from pre-press, through print production and onto mailing or delivery.</p>
-    <p>We also purchase a considerable amount of paper on behalf of our customers. <strong>Our buying power will get you access to a wide range of papers at the best rates.</strong></p>
-    <p>And <strong>integrating traditional publishing with your online activity has a greater impact than either medium alone</strong>. So we can work with you to ensure there is synergy between your traditional offline and online marketing projects.</p>
-    <p class="lead">So why not put us to the test? <strong>If you have any print projects or need to buy some paper <a href="#quote-request" data-toggle="collapse" data-target="#quote-request" aria-expanded="true" aria-controls="quote-request">click here to use this form</a></strong></p>
-  </div>
+    <div class="col-sm-12 col-xs-12">
+      <p class='big-standard top-and-tailed'>Exclusive agency deals and print buying expertise</p>
+    </div>
+    
+    <div class="col-sm-12 col-xs-12">
+      <p class='big-standard top-and-tailed'>Competitive prices, a quality product and a first class service</p>
+    </div>
+    
+    <div class="col-sm-12 col-xs-12">
+      <p class='big-standard'>More print for your pound</p>
+    </div>
+    
 </div>
 
 <div class="row visible-lg visible-md visible-sm visible-xs">
@@ -70,10 +59,20 @@ controls: autoplay loop
   </div>
 </div>
 
-<div class="row visible-lg visible-md visible-sm hidden-xs">
-  <div class="col-lg-12 col-md-12 col-sm-12">
-    {% include video-player.html %}
-  </div>
-</div>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/data/images.js"></script>
+<script src="/public/js/app.js"></script>
+
+<script type="text/javascript">
+  $(function() {
+    var offset = getOffset();
+    var interval = getInterval();
+
+    $("#home-slider-0-holder").append(createSwapperImages(print_images[offset]));
+    $("#home-slider-1-holder").append(createSwapperImages(print_images[offset]));
+    setInterval('swapImages()', interval);
+
+  });
+</script>
 
 {% include back-to-what-we-do.html %}
