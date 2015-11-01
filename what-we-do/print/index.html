@@ -20,15 +20,15 @@ show-plant-list: true
   </div>
 
     <div class="col-lg-4 col-md-4">
-      <p class='visible-lg visible-md big-standard top-and-tailed'>Exclusive agency deals and print buying expertise</p>
+      <p class='big-standard top-and-tailed'>Exclusive agency deals and print buying expertise</p>
     </div>
     
     <div class="col-lg-4 col-md-4">
-      <p class='visible-lg visible-md big-standard top-and-tailed'>Competitive prices, a quality product and a first class service</p>
+      <p class='big-standard top-and-tailed'>Competitive prices, a quality product and a first class service</p>
     </div>
     
     <div class="col-lg-4 col-md-4">
-      <p class='visible-lg visible-md big-standard'>More print for your pound</p>
+      <p class='big-standard'>More print for your pound</p>
     </div>
     
 </div>
@@ -65,11 +65,10 @@ show-plant-list: true
 
 <script type="text/javascript">
   $(function() {
-    var offset = getOffset();
     var interval = getInterval();
 
-    $("#home-slider-0-holder").append(createSwapperImages(print_images[offset]));
-    $("#home-slider-1-holder").append(createSwapperImages(print_images[offset]));
+    $("#home-slider-0-holder").append(createSwapperImages(print_images[0]));
+    $("#home-slider-1-holder").append(createSwapperImages(print_images[0]));
     setInterval('swapImages()', interval);
 
   });
