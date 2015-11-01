@@ -74,8 +74,8 @@ function swapImages() {
       next = $(this).parent().children().first();
     }
 
-    $(this).fadeOut(500, "easeInOutCubic", function() {
-      next.fadeIn(500, "easeInOutCubic").addClass('active');
+    $(this).fadeOut(400, "easeInOutCubic", function() {
+      next.fadeIn(800, "easeInOutCubic").addClass('active');
       $(this).removeClass('active');
     });
   });
