@@ -99,6 +99,7 @@ var print_images = [
     "/public/images/what-we-do/print-new/print_card_brochure.jpg",
     "/public/images/what-we-do/print-new/print_parkins_fabrics.jpg",
     "/public/images/what-we-do/print-new/print_select_travel.jpg",
-    "/public/images/what-we-do/print-new/print_wedding_venues.jpg"
+    "/public/images/what-we-do/print-new/print_wedding_venues.jpg",
+    "/public/images/what-we-do/print-new/print_ambra_todd.jpg"
   ]
 ];
