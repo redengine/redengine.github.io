@@ -2,44 +2,44 @@
 
   <input type='hidden' name='redirect_to' value='https://redengine.github.io/thanks.html' />
 
-  <p class="lead text-warning">Got an idea?</p>
-  <p>Get in touch - we'll be glad to discuss your project with you.</p>
+  <p class="lead text-warning">Got a project or just want to find out more?</p>
+  <p>Please fill your details in here.</p>
 
   <div id="error-messages" class="alert alert-danger" role="alert"></div>
 
   <div class="form-group" id="name-form-group" name="name-form-group">
     <label for="name" class="control-label">Name</label>
-    <input type="text" class="form-control" id="name" name="name" placeholder="Tell us your name">
+    <input type="text" class="form-control" id="name" name="name" placeholder="Your name...">
   </div>
 
   <div class="form-group" id="company-form-group" name="company-form-group">
-    <label for="name" class="control-label">Company</label>
-    <input type="text" class="form-control" id="company" name="company" placeholder="Tell us who you work for">
+    <label for="name" class="control-label">Company name</label>
+    <input type="text" class="form-control" id="company" name="company" placeholder="Company name...">
   </div>
 
   <div class="form-group" id="email-form-group" name="email-form-group">
     <label for="email" class="control-label">Email</label>
-    <input type="email" class="form-control" id="email" name="email" placeholder="Give us your email address">
+    <input type="email" class="form-control" id="email" name="email" placeholder="email address...">
   </div>
 
   <div class="form-group" id="phone-form-group" name="phone-form-group">
-    <label for="phone" class="control-label">Phone</label>
-    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your contact number">
+    <label for="phone" class="control-label">Phone number</label>
+    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Contact number">
   </div>
 
   <div class="form-group" id="budget-form-group" name="budget-form-group">
-    <label for="budget" class="control-label">Budget</label>
-    <input type="text" class="form-control" id="budget" name="budget" placeholder="Just a rough idea of your budget">
+    <label for="budget" class="control-label">Subject</label>
+    <input type="text" class="form-control" id="budget" name="budget" placeholder="Project title or job number...">
   </div>
 
   <div class="form-group" id="date-form-group" name="date-form-group">
-    <label for="date" class="control-label">Approx Date Required</label>
+    <label for="date" class="control-label">Needed by?</label>
     <input type="date" class="form-control" id="date" name="date" placeholder="Approximate date you need it by">
   </div>
 
   <div class="form-group" id="project-form-group" name="project-form-group">
-    <label for="project" class="control-label">Project Description</label>
-    <textarea class="form-control" id="project" name="project" rows="10" placeholder="Tell us all about it..."></textarea>
+    <label for="project" class="control-label">Your message</label>
+    <textarea class="form-control" id="project" name="project" rows="10" placeholder="Your message..."></textarea>
   </div>
 
   {% if page.type == "what" %}
@@ -104,7 +104,7 @@
   <div class="form-group" id="attachment-form-group" name="attachment-form-group">
     <label for="attachment" class="control-label">Attachment</label>
     <input type="file" id="attachment" name="attachment">
-    <p class="help-block">If you have any supporting information - upload a file here</p>
+    <p class="help-block">If you have any additional information, or a spec you'd like us to quote on? - upload a file here</p>
   </div>
 
   <button type="submit" class="btn btn-success btn-lg btn-block">Put me in touch</button>
