@@ -1,0 +1,54 @@
+---
+layout: default
+
+title: Welcome
+
+lead-text: Attract attention and make the right impression through film, photography, design, content and print...
+strapline: "Inspire your customers... position and promote your brand"
+red:
+engine:
+
+type: home
+---
+
+<div class="row visible-lg visible-md">
+  <div id="home-slider-0-holder" class="swapper-image col-lg-8 col-md-8">
+  </div>
+
+  <div class="col-lg-4 col-md-4">
+    {% include index-page-wording.html %}
+  </div>
+</div>
+
+<div class="row visible-sm visible-xs">
+  <div class="col-sm-12 col-xs-12">
+    {% include index-page-wording.html %}
+  </div>
+</div>
+
+<div class="row visible-sm visible-xs">
+  <div id="home-slider-1-holder" class="swapper-image col-sm-12 col-xs-12">
+  </div>
+</div>
+
+
+<script src="/public/js/jquery.js"></script>
+<script src="/public/data/images.js"></script>
+<script src="/public/js/app.js"></script>
+
+<script type="text/javascript">
+  $(function() {
+    var offset = getOffset();
+    var interval = getInterval();
+
+    $("#home-slider-0-holder").append(createSwapperImages(index_images[offset]));
+    $("#home-slider-1-holder").append(createSwapperImages(index_images[offset]));
+    setInterval('swapImages()', interval);
+
+  });
+</script>
+
+<br>
+<br>
+<br>
+
