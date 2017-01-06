@@ -239,6 +239,14 @@ footer {
   border-radius: 15px 15px 0px 0px;
 }
 
+.box-rounded {
+  padding: 0px;
+  border-radius: 15px 15px 0px 0px;
+  background: rgb(10,120,200);
+  text-align: center;
+  line-height: 100px
+}
+
 .img-responsive, .fadish-bg {
   margin-bottom: 10px;
 }

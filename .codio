@@ -8,5 +8,6 @@
   "preview": {
     "3. Preview My Changes": "http://{{domain}}:3000",
     "5. The Red Engine Website": "http://redengine.tv"
-  }
+  },
+  "debugger": []
 }
