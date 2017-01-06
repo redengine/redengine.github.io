@@ -262,6 +262,21 @@ footer {
 
 address {
   color: rgb(120,121,121);  
+    
+}
+
+address-2-red {
+  color: rgb(191,0,29);
+    
+}
+
+address-2-purple {
+  color: rgb(80,19,65);
+    
+}
+
+address-2-orange {
+  color: rgb(217,64,21);
 }
 
 .media-heading, h3 {
