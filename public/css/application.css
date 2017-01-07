@@ -240,11 +240,29 @@ footer {
 }
 
 .box-rounded {
-  padding: 0px;
-  border-radius: 15px 15px 0px 0px;
-  background: rgb(10,120,200);
+  padding: 10px;
+  border-radius: 15px 15px 0px 0px; 
+  color: white;
+  font-family: 'DejaVuSans';
+  font-size: 1.7em;
+  font-weight: bold;
+  letter-spacing: 3px;
   text-align: center;
   line-height: 100px
+}
+
+.box-font-1 {
+  font-family: 'DejaVuSans';
+  font-size: 1.7em;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.box-font-2 {
+  font-family: 'DejaVuSans';
+  font-size: 0.5em;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .img-responsive, .fadish-bg {
