@@ -95,12 +95,12 @@ var what_we_do_index_images = [
 
 var print_images = [ 
   [
-    "/public/images/what-we-do/print-new/print_harveys_catalogues.jpg",
-    "/public/images/what-we-do/print-new/print_boss_brochure.jpg",
-    "/public/images/what-we-do/print-new/print_parkins_fabrics.jpg",
-    "/public/images/what-we-do/print-new/print_iris_brochure.jpg",
-    "/public/images/what-we-do/print-new/print_brochure_comp.jpg",
-    "/public/images/what-we-do/print-new/print_ambra_todd.jpg",
-    "/public/images/what-we-do/print-new/print_select_travel.jpg"
+    "/public/images/what-we-do/print/slider/2017_eurocamp_catalogues.jpg",
+    "/public/images/what-we-do/print/slider/2017_betterware_routemap_2.jpg",
+    "/public/images/what-we-do/print/slider/2016_print_harveys_catalogues.jpg",
+    "/public/images/what-we-do/print/slider/2016_print_boss_brochure.jpg",
+    "/public/images/what-we-do/print/slider/2016_print_wedding_venues.jpg",
+    "/public/images/what-we-do/print/slider/2016_print_ambra_todd.jpg",
+    "/public/images/what-we-do/print/slider/2016_print_iris_brochure.jpg"
   ]
 ];
