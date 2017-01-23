@@ -429,3 +429,16 @@ video {
 .swapper-image img.active {
   display: block;
 }
+
+.picker-caption {
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+    color: white;
+}
+
+.v-align-middle {
+    display: inline-block;
+    vertical-align: middle;
+}
