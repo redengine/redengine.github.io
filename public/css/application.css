@@ -259,6 +259,18 @@ footer {
   line-height: 100px
 }
 
+.box-not-rounded {
+  padding: 15px;
+  border-radius: 0px 0px 0px 0px; 
+  color: white;
+  font-family: 'DejaVuSans';
+  font-size: 1.7em;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 100px
+}
+
 .box-font-1 {
   font-family: 'DejaVuSans';
   font-size: 1.7em;
