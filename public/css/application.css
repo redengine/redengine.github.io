@@ -275,12 +275,8 @@ footer {
   padding: 15px;
   border-radius: 0px 0px 0px 0px; 
   color: white;
-  font-family: 'DejaVuSans';
-  font-size: 1.7em;
-  font-weight: bold;
-  letter-spacing: 3px;
   text-align: center;
-  line-height: 55px
+  line-height: 55px;
 }
 
 .box-font-1 {
@@ -295,6 +291,13 @@ footer {
   font-size: 0.5em;
   font-weight: bold;
   letter-spacing: 3px;
+}
+
+.box-font-3 {
+  font-family: 'DejaVuSans';
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 3.5px;
 }
 
 .img-responsive, .fadish-bg {
