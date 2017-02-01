@@ -1,5 +1,5 @@
 name: Red Engine
-markdown: redcarpet
+markdown: kramdown
 safe: true
 lsi: false
 highlighter: pygments
