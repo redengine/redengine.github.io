@@ -3,6 +3,14 @@ var index_images = [
     "/public/images/index/bowie-book-fan.jpg",
     "/public/images/index/image-set-1/image-1.jpg",
     "/public/images/index/stay-clifford.jpg"
+  ],[
+    "/public/images/index/bowie-book-fan.jpg",
+    "/public/images/index/image-set-1/image-1.jpg",
+    "/public/images/index/stay-clifford.jpg"
+  ],[
+    "/public/images/index/bowie-book-fan.jpg",
+    "/public/images/index/image-set-1/image-1.jpg",
+    "/public/images/index/stay-clifford.jpg"
   ]
 ];
 
