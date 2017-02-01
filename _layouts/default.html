@@ -47,18 +47,31 @@
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li {% if page.type == 'what' %} class="active-link" {% endif %}>
-				      <a href="/what-we-do/index.html">WHAT WE DO</a>
-			      </li>
+
+            <li {% if page.type == 'what' %} class="dropdown active-link" {% endif %}>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WHAT WE DO<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li {% if page.title == 'Print' %} class="active-link" {% endif %}>
+                <a href="/what-we-do/print/index.html">PRINT</a>
+                </li>
+                <li {% if page.title == 'Publishing' %} class="active-link" {% endif %}>
+                <a href="/what-we-do/publishing/index.html">PUBLISHING</a>
+                </li>
+                <li {% if page.title == 'Creative' %} class="active-link" {% endif %}>
+                <a href="/what-we-do/creative/index.html">CREATIVE</a>
+                </li>
+              </ul>
+            </li>
             <li {% if page.type == 'who' %} class="active-link" {% endif %}>
-				      <a href="/who-we-are/index.html">WHO WE ARE</a>
-			      </li>
+                <a href="/who-we-are/index.html">WHO WE ARE</a>
+            </li>
             <li {% if page.type == 'post' %} class="active-link" {% endif %}>
-				      <a href="{{ site.posts.first.url }}">BLOG</a>
-			      </li>
+                <a href="{{ site.posts.first.url }}">BLOG</a>
+            </li>
             <li {% if page.type == 'contact' %} class="active-link" {% endif %}>
-				      <a href="/contact.html">CONTACT</a>
-			      </li>
+                <a href="/contact.html">CONTACT</a>
+            </li>
+
           </ul>
         </div>
       </nav>
