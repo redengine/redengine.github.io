@@ -38,6 +38,13 @@ h1 {
   letter-spacing: 4px;
 }
 
+h1-2 {
+  color: rgb(171,174,180);
+  text-align: center;
+  font-size: 1.2em;
+  letter-spacing: 4px;
+}
+
 h2 {
   margin-top: 0px;
   padding-top: 0px;
