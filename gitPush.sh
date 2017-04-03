@@ -1,3 +1,3 @@
 git add --all
 git commit -am 'Auto commit' --all
-git push https://suejarman@github.com/suejarman/redengine.github.io
+git push https://github.com/redengine/redengine.github.io
