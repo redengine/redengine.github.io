@@ -75,7 +75,6 @@ var what_we_do_index_images = [
 var print_images = [ 
   [
     "/public/images/what-we-do/print/slider/2017_eurocamp_catalogues.jpg",
-    "/public/images/what-we-do/print/slider/2017_print_canada_essential.jpg",
     "/public/images/what-we-do/print/slider/2016_print_harveys_catalogues.jpg",
     "/public/images/what-we-do/print/slider/2016_print_boss_brochure.jpg",
     "/public/images/what-we-do/print/slider/2016_print_wedding_venues.jpg",
